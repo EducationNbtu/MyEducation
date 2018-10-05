@@ -1,0 +1,40 @@
+.top
+{
+	width: 100%;
+	height: 12%;
+
+}
+.mid
+{
+	width: 100%;
+	height: 70%;
+	background: url(../image/login.png);
+}
+.buttom
+{
+	width: 100%;
+	height: 18%;
+	
+}
+.login
+{
+	height: 50%;
+	width: 22%;
+	background-color: #F6F6F6;
+	position: absolute;
+	left: 1050px;
+	bottom: 28%;
+}
+.detail
+{
+	width: 80%;
+	height: 60%;
+	margin:20% 10% 20% 10%;
+}
+.span
+{
+	width: 30%;
+	height: 70%;
+	margin:0 auto;
+    text-align: center;
+}

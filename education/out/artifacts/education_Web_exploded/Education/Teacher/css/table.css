@@ -1,0 +1,68 @@
+ .t1
+ {
+	text-align:center; 
+	background-color:#e2eaff;
+	width:480px;
+ }
+ .t2
+ {
+	 background-color:#e2eaff;
+ }
+  .t3
+ {
+	text-align:center; 
+	background-color:#e2eaff;
+	width:384px;
+ }
+ .t4
+ {
+	text-align:center; 
+	background-color:#e2eaff;
+	width:320px;
+ }
+  .t5
+ {
+	text-align:center; 
+	background-color:#e2eaff;
+	width:274px;
+ }
+ .c
+ {
+     font-size:30px;	 
+	 text-align:center;
+ }
+ a
+{
+	 text-decoration:none; 
+}
+.r
+{
+	text-align:right;
+}
+.textbox
+{
+	font-size:40px;
+	height:50px;
+	width:300px;
+}
+.button1
+{
+	font-size:40px;
+	height:50px;
+	width:100px;
+}
+.b1
+{
+	width:1600px;
+	height:50px;
+	background-color:#e4f5ff;
+}
+.c1
+{
+	text-align:center;
+}
+.c2
+{
+	margin-top:200px;
+	margin-left:450px;
+}

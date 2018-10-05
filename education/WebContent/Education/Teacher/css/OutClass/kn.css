@@ -1,0 +1,153 @@
+html,body
+{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	background-color: #f6f6f6;
+}
+.left
+{
+	width: calc(59% - 2px);
+	height: calc(100% - 2px);
+	background-color: #fff;
+	
+}
+.right
+{
+	width: calc(40% - 2px);
+	height: calc(100% - 2px);
+	position: relative;
+	left: 1%;
+	
+	
+}
+.left,.right
+{
+	float: left;
+}
+.right_top
+{
+	width: calc(100% - 2px);
+	height: calc(60% - 2px);
+	border: 1px solid #dff0d8;
+	background-color: #ebeef2;
+}
+.right_bottom
+{
+	width: calc(100% - 2px);
+	height: calc(38% - 2px);
+	border: 1px solid #eee;
+	position: relative;
+	top: 2%;
+	background-color: #fff;
+}
+.title
+{
+	width: calc(100% - 12px);
+	height: calc(10% - 2px);
+	border-bottom: 1px solid #eee;
+	display:flex;
+    align-items:center;
+    justify-content:left;
+    line-height: 10%;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 5px;
+}
+.list
+{
+	width: calc(100% - 12px);
+	height: calc(9% - 2px);
+	border-bottom: 1px solid #eee;
+	display:flex;
+    align-items:center;
+    justify-content:left;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.left_title
+{
+	width: calc(100% - 0px);
+	height: calc(5% - 2px);
+	border-bottom: 1px solid #eee;
+	background-color: #f0f2f5;
+}
+.left_title_list
+{
+	width: calc(25% - 2px);
+	height: calc(100% - 2px);
+	display:flex;
+    align-items:center;
+    justify-content:left;
+    font-size: 15px;
+    color: gray;
+
+
+}
+.left_title div
+{
+	float: left;
+}
+a
+{
+	text-decoration: none;
+	color: #23bbff;
+}
+.tb
+{
+	width: calc(100% - 2px);
+	border: 1px solid #eee;
+	height: calc(93% - 2px);
+	position: relative;
+	top: 2%;
+}
+.cont_format
+{
+	text-align: center;
+	border: 1px solid #cccccc;
+}
+.cont
+{
+	height: 10%;
+}
+
+#customers
+  {
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  width:calc(100% - 2px);
+  border-collapse:collapse;
+  
+  }
+ 
+#customers td, #customers th 
+  {
+  font-size:1em;
+  border:1px solid #e9eaec;
+  border-radius: 3px;
+  }
+ 
+
+
+  .name
+  {
+  	width: 10%;
+  }
+
+  .bg
+  {
+  	background-color: #f6f6f6;
+  }
+  .use
+  {
+  	cursor: pointer;
+  }
+  .use:hover
+  {
+  	background-color: #f6f6f6;
+  }
+  .demo
+  {
+  	background-color: #f6f6f6;
+  }

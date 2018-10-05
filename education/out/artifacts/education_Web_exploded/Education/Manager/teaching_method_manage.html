@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>教学安排管理</title>
+</head>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script>
+	$(function(){
+		$('#butn2').click(function(){
+			$('#smallwindow').css('display','block');
+		});
+		$('#close').click(function(){
+			$('#smallwindow').css('display','none');
+		});
+		$('#new').click(function(){
+			$('#table3').find('input').val("");
+		});
+		$('.add').click(function(){
+			$('#smallwindow').css('display','block');
+		});
+	})
+</script>
+<style>
+	#background{width: 1686px;height: 986px;}
+	#background button{cursor: pointer;}
+	#long{height: 70px;width: 1200px;position: relative;top: 60px;left: 60px;}
+	#long button{height: 60px;border-radius:16px;position: relative;font-size: 30px;color: white;border: none;float: left;}
+	#butn1{background: red;width: 180px;}
+	#butn2{background: #1E90FF;width: 230px;left: 100px;}
+	#butn3{background: #1E90FF;width: 128px;left: 150px;}
+	#long input{height: 52px;width: 330px;background:url(备用图标/搜索.png) no-repeat 328px 0;padding-right: 50px;font-size: 30px;background-size: 53px;}
+
+	#find{height: 56px;width: 330px;position: relative;float: left;left: 150px;background: white;}
+	#background tr{height: 75px;}
+	#table1{width: 65px;position: relative;top: 90px;float: left;border-collapse:collapse;}
+	#table1 input{width: 25px;height: 25px;}
+	#table2{border-collapse:collapse;width: 1580px;height: ;position: relative;top: 90px;float: left;border-color: #A6A6A6;}
+	#table2 img{width: 40px;height: 40px;cursor: pointer;}
+	#table2 tr:nth-child(1){background: #1E90FF;color: white;font-size: 25px;}
+	.ts{width: 142px;}
+	.tl{width: 240px;}
+	#smallwindow{width: 650px;height: 900px;border: 1px solid black;border-radius:16px;position: absolute;;left: 0;top: 0;right: 0;bottom: 0;margin: auto;background: white;overflow: hidden;display: none;}
+	#slong{width: 650px;height: 70px;background: #1E90FF;border-radius: 8px;line-height: 70px;}
+	#slong span{left: 20px;position: relative;color: white;font-size: 25px;}
+	.close{position: relative;font-size: 30px;left: 350px;color: white;cursor: pointer;}
+	#close{position: relative;font-size: 30px;left: 400px;color: red;cursor: pointer;}
+	#table3{border-collapse:collapse;position: relative;top: 30px;}
+	.short{height: 80px;}
+	.long{height: 130px;}
+	#table3 th:nth-child(1){width: 225px;}	
+	#table3 th:nth-child(2){width: 425px;}
+	#table3 div{position: relative;height: 50px;border-radius: 10px;line-height: 50px;}
+	.short div{bottom: 20px;}
+	.long div{bottom: 45px;}
+	.t3d1{width: 80px;left: 120px;background: #1E90FF;color: white;}
+	.t3d2{width: 120px;left: 80px;background: #1E90FF;color: white;}
+	.t3d3{width: 180px;left: 20px;background: #1E90FF;color: white;}
+	.short input{position: relative;width: 200px;height: 45px;right: 111px;bottom: 20px;box-shadow: inset 3px 3px 5px #C9C9C9;}
+	.long input{position: relative;width: 370px;height: 100px;right: 26px;bottom: 18px;box-shadow: inset 3px 3px 5px #C9C9C9;}
+	#new{width: 80px;height: 36px;background: #FFD700;border: none;border-radius: 4px;position: relative;left: 285px;top: 30px;cursor: pointer;}
+	#over{width: 80px;height: 36px;background: #FFD700;border: none;border-radius: 4px;position: relative;left: 400px; ;top: 30px;cursor: pointer;}
+	#STATE{width: 400px;height: 36px;position: relative;bottom: 15px;left: -30px;color: gray;}
+	#STATE input{width: 20px;height: 20px;position: relative;left: 0px;top: 0px;box-shadow:none;}
+</style>
+<body>
+	<div id="background">
+		<div id="long">
+			<button id="butn1"><b>批量删改</b></button>
+			<button id="butn2"><b>添加教学安排</b></button>
+			<button id="butn3"><b>全部</b></button>
+			<div id="find"><input type="text" placeholder="按教学安排安排名检索" /></div>
+		</div>
+		<table id="table1">
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+		</table>
+		<table id="table2" border="1">
+					<tr>
+						<th class="ts">序号</th>
+						<th class="ts">编号</th>
+						<th class="ts">标题</th>
+						<th class="tl">总时长（课长）</th>
+						<th class="ts">创建时间</th>
+						<th class="ts">创建人</th>
+						<th class="ts">状态</th>
+						<th class="tl">所属教学计划号</th>
+						<th class="tl">操作</th>  </tr>
+					<tr>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="tl">
+							<img class="add" src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th>  </tr>
+					<tr>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="tl">
+						    <img class="add" src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th>  </tr>
+					<tr>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="tl">
+							<img class="add" src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th>  </tr>
+					<tr>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="tl">
+							<img class="add" src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th>  </tr>
+					<tr>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="tl">
+							<img class="add" src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th>  </tr>
+					<tr>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="tl">
+							<img class="add" src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th>  </tr>
+					<tr>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="tl">
+							<img class="add" src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th>  </tr>
+					<tr>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="ts"></th>
+						<th class="tl"></th>
+						<th class="tl">
+							<img class="add" src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th>  </tr>
+		</table>
+	</div>
+	<div id="smallwindow">
+		<div id="slong">
+			<span>添加教学安排</span>
+			<b class="close">-</b>
+			<b id="close">×</b>
+		</div>
+		<table id="table3">
+			<tr class="short">
+				<th><div class="t3d1">标题</div></th>
+				<th><input type="text" /></th> </tr>
+			<tr class="long">
+				<th><div class="t3d1">内容</div></th>
+				<th><input type="text" /></th> </tr>
+			<tr class="short">
+				<th><div class="t3d2">课长</div></th>
+				<th><input type="text" /></th> </tr>
+			<tr class="long">
+				<th><div class="t3d3">添加知识点</div></th>
+				<th><input type="text" placeholder="填写教学安排号" /></th> </tr>
+			<tr class="long">
+				<th><div class="t3d3">添加试卷</div></th>
+				<th><input type="text" placeholder="填写教学安排号" /></th> </tr>
+			<tr class="short">
+				<th><div class="t3d2">添加状态</div></th>
+				<th>
+					<div id="STATE">
+						<input name="state" type="radio" />待审核
+						<input name="state" type="radio" />正常
+						<input name="state" type="radio" />停用
+						<input name="state" type="radio" />删除
+					</div>
+				</th> </tr>
+			<tr class="short">
+				<th><div class="t3d3">所属教学计划号</div></th>
+				<th><input type="text" /></th> </tr>
+		</table>
+		<button id="new">重置</button>
+		<button id="over">提交</button>
+	</div>
+</body>
+</html>

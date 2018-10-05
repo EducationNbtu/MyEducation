@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>题目管理</title>
+	<style>
+		#title{
+			
+			width: 1686px;
+			height: 986px;}
+		#btn1{
+			background-color: #ff3333;
+			color: white;
+			width: 150px;
+			height: 60px;
+			border-radius: 10px;
+			border: 0;
+			position: absolute;
+			left: 50px;
+			top: 50px;
+		}
+		#btn1:hover{
+			cursor: pointer;
+		}
+		#btn2{
+			background-color: #169bd5;
+			color: white;
+			width: 150px;
+			height: 60px;
+			border-radius: 10px;
+			border: 0;
+			position: absolute;
+			left: 250px;
+			top: 50px;
+		}
+		#btn2:hover{
+			cursor: pointer;
+		}
+		#btn3{
+			background-color: #169bd5;
+			color: white;
+			width: 100px;
+			height: 50px;
+			border-radius: 15px;
+			border: 0;
+			position: absolute;
+			left: 450px;
+			top: 60px;
+		}
+		#btn3:hover{
+			cursor: pointer;
+		}
+		#text1{
+			height: 45px;
+			width: 300px;
+			position: absolute;
+			left: 550px;
+			top:60px;
+		}
+		#img1{
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			left: 800px;
+			top: 60px;
+
+		}
+		#checkbox{
+			height: 500px;
+			position: absolute;
+			left: 20px;
+			top: 120px;
+
+		}
+		#checkbox input{
+			width: 25px;
+			height: 25px;
+		}
+
+		#table1{
+			width: 1250px;
+			height: 500px;
+			position: absolute;
+			left: 70px;
+			top: 120px;
+			color: white;
+		}
+		#table1 tr{
+			height: 50px;
+		}
+		#table1 td{
+			border: 0.5px solid gray;
+			text-align: center;
+		}
+		.title_image1{
+			position: relative;
+			left:-20px;
+		}
+		.title_image2{
+			position: relative;
+			left:0px;
+		}
+
+		.title_image3{
+			position: relative;
+			left:20px;
+		}
+		.title_image4{
+			position: relative;
+			left:40px;
+		}
+		.title_image1:hover{
+			cursor: pointer;
+		}
+		.title_image2:hover{
+			cursor: pointer;
+		}
+		.title_image3:hover{
+			cursor: pointer;
+		}
+		.title_image4:hover{
+			cursor: pointer;
+		}
+		#tr1{
+			background-color: #4e84fe;
+		}
+		#td1,#td2,#td3{
+			width: 130px;
+		}
+		
+		#td4{
+			width: 160px;
+		}
+		#td5,#td6,#td7,#td8{
+			width: 120px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="title">
+		<input type="button" id="btn1" value="批量删除" />
+		<input type="button" id="btn2" value="添加题目" />
+		<input type="button" id="btn3" value="全部" />
+		<input type="text" id="text1" placeholder="按问题名检索" />
+		<img src="image/search.png" id="img1" />
+
+		<table id="checkbox">
+			<tr><td><input type="checkbox" id="check1" /></td></tr>
+			<tr><td><input type="checkbox" id="check2" /></td></tr>
+			<tr><td><input type="checkbox" id="check3" /></td></tr>
+			<tr><td><input type="checkbox" id="check4" /></td></tr>
+			<tr><td><input type="checkbox" id="check5" /></td></tr>
+			<tr><td><input type="checkbox" id="check6" /></td></tr>
+			<tr><td><input type="checkbox" id="check7" /></td></tr>
+			<tr><td><input type="checkbox" id="check8" /></td></tr>
+			<tr><td><input type="checkbox" id="check9" /></td></tr>
+			<tr><td><input type="checkbox" id="check10" /></td></tr>
+		</table>
+		<table id="table1" cellspacing="0" >
+			<tr id="tr1">
+				<td id="td1">标号</td><td  id="td2">序号</td><td id="td3">标题</td><td id="td4">AC</td><td id="td5">创建时间</td><td id="td6">创建人</td><td id="td7">状态</td><td id="td8">测试数据</td><td id="td9">操作</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/增1.png" class="title_image1" /><img src="image/add_2.png" class="title_image2" /><img src="image/delete.png" class="title_image3" /><img src="image/update.png" class="title_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="title_image1" /><img src="image/add_2.png" class="title_image2" /><img src="image/delete.png" class="title_image3" /><img src="image/update.png" class="title_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="title_image1" /><img src="image/add_2.png" class="title_image2" /><img src="image/delete.png" class="title_image3" /><img src="image/update.png" class="title_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="title_image1" /><img src="image/add_2.png" class="title_image2" /><img src="image/delete.png" class="title_image3" /><img src="image/update.png" class="title_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="title_image1" /><img src="image/add_2.png" class="title_image2" /><img src="image/delete.png" class="title_image3" /><img src="image/update.png" class="title_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="title_image1" /><img src="image/add_2.png" class="title_image2" /><img src="image/delete.png" class="title_image3" /><img src="image/update.png" class="title_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="title_image1" /><img src="image/add_2.png" class="title_image2" /><img src="image/delete.png" class="title_image3" /><img src="image/update.png" class="title_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="title_image1" /><img src="image/add_2.png" class="title_image2" /><img src="image/delete.png" class="title_image3" /><img src="image/update.png" class="title_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="title_image1" /><img src="image/add_2.png" class="title_image2" /><img src="image/delete.png" class="title_image3" /><img src="image/update.png" class="title_image4" />
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

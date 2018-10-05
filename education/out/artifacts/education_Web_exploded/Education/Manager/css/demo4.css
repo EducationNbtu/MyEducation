@@ -1,0 +1,80 @@
+.main
+{
+	width: 1692px;
+	height: 888px;
+}
+.content
+{
+	margin-left:609px;
+	width: 470px;
+	height: 700px;
+	margin-top: 90px;
+	z-index: 2;
+	position: absolute;
+	top: 0px;
+	box-shadow: 0px 0px 75px 10px #516c84 inset;
+	border-radius: 5px;
+}
+.bc
+{
+	margin-left: 609px;
+	width: 470px;
+	height: 700px;
+	margin-top: 90px;
+	border-radius: 5px;
+	background-color: #1d2f42;opacity:0.3;
+	z-index: 1;
+}
+.head
+{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 40px;
+
+}
+.tag
+{
+	color: white;
+	font-size: 22px;
+	font-family: "幼圆";
+	display: block;
+	position: absolute;
+	margin-left: 194px;
+	color: #AECCD1;
+
+}
+.list
+{
+	width: 310px;
+	margin: auto;
+	height: 400px;
+
+}
+.clear
+{
+	display: block;
+	overflow: hidden;
+}
+.list ul li
+{
+	color: #AECCD1;
+	font-size: 14px;
+	margin-top: 20px;
+	list-style: none;
+	float: bottom;
+	font-family: "幼圆";
+}
+.list input
+{
+	outline: none;
+	border: 0;
+	display: block;
+	margin-left:25px;
+	border-radius: 7px;
+	font-family: "幼圆";
+	height: 35px;
+	font-size: 18px;
+}

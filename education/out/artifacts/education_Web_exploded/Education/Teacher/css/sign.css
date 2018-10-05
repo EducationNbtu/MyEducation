@@ -1,0 +1,24 @@
+body
+{
+	background:url("../img/5.jpg");
+	font-family:幼圆;
+}
+.h
+{
+	font-size:40px;
+}
+.t1
+{
+	border-color:black;
+}
+.t2
+{
+	margin-left:200px;
+	height:300px;
+	width:1520px;
+	font-size:50px;
+}
+.b1
+{
+	margin-left:850px;
+}

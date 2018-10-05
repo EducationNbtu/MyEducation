@@ -1,0 +1,259 @@
+.body{
+	width: 1686px;
+	height: 986px;
+	background-color: #d4ebdb;
+}
+.form{
+	width: 1486px;
+	height: 700px;
+	background-color:	#FFEFD5;
+	margin-top:80px;
+	margin-left:96px;
+}
+.list{
+	
+}
+.button{
+	width:120px;
+	height: 40px;
+	margin-top: 20px;
+	margin-left: 40px;
+	border-radius:10px ;
+	border: 0px;
+}
+
+ #box{
+        width: 380px;
+        margin-top: -33px;
+        margin-left: 500px;
+        font-family: 'Microsoft YaHei';
+        font-size: 14px;
+    }
+    input{
+        width: 260px;
+        border: 1px solid #e2e2e2;
+        height: 30px;
+        float: left;
+       
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position:5px center;
+        padding:0 0 0 40px;
+    }
+    #search{
+        width: 78px;
+        height: 32px;
+        float: right;
+        background: black;
+        color: white;
+        text-align: center;
+        line-height: 32px;
+        cursor: pointer;
+    }
+
+.select{
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+}
+
+
+@charset "utf-8";
+/* CSS Document */
+.tabtop13 {
+	margin-top: 13px;
+}
+.tabtop13 td{
+	background-color:#ffffff;
+	height:25px;
+	line-height:150%;
+}
+.font-center{ text-align:center}
+.btbg{background:#e9faff !important;}
+.btbg1{background:#f2fbfe !important;}
+.btbg2{background:#f3f3f3 !important;}
+
+.titfont {
+	
+	font-family: 微软雅黑;
+	font-size: 16px;
+	font-weight: bold;
+	color: #255e95;
+	background:  no-repeat 15px center;
+	background-color:#e9faff;
+}
+.tabtxt2 {
+	font-family: 微软雅黑;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 10px;
+	color:#327cd1;
+}
+.tabtxt3 {
+	font-family: 微软雅黑;
+	font-size: 14px;
+	padding-left: 15px;
+	color: #000;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 20px;
+}
+
+.body1{
+	width: 450px;
+	height: 720px;
+	background-color:#AFEEEE;
+	margin: auto;
+	border-radius:5px ;
+	display:none;
+	position: absolute; /* 固定定位 */
+	left: 600px;
+    margin-top: -50px;
+}
+.head{
+	width:450px;
+	height:100px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+
+.h1{
+	font-family: 微软雅黑;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	background:  no-repeat 15px center;
+	margin-top: -80px;
+}
+.p{
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	text-align:center;
+	margin-top: 10px;
+}
+
+.title{
+	width: 50px;
+	height: 25px;
+	margin-top: 60px;
+	margin-left:100px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+.Stime{
+	width: 90px;
+	height: 25px;
+	margin-top: 20px;
+	margin-left:60px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+.Clocation{
+	width: 90px;
+	height: 25px;
+	margin-top: 20px;
+	margin-left:60px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+.Director{
+	width: 50px;
+	height: 25px;
+	margin-top: 60px;
+	margin-left:100px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+.addKP{
+	width: 110px;
+	height: 25px;
+	margin-top: 20px;
+	margin-left:40px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+.addTP{
+	width: 90px;
+	height: 25px;
+	margin-top: 80px;
+	margin-left:60px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+.addStatus{
+	width: 90px;
+	height: 25px;
+	margin-top: 80px;
+	margin-left:60px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+.TeachPN{
+	width: 150px;
+	height: 25px;
+	margin-top: 30px;
+	margin-left:10px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+
+.button1{
+	width: 50px;
+	height: 25px;
+	margin-top: 30px;
+	margin-left:120px;
+	background-color:#FFA500 ;
+	border-radius:5px ;
+	color: white;
+	text-align:center;
+}
+
+.text{
+	width: 200px;
+	height: 25px;
+	margin-top: -25px;
+	margin-left: 190px;
+}
+
+
+.select0{
+	width: 80px;
+	height: 25px;
+	margin-top: -25px;
+	margin-left: 180px;
+}
+.select1{
+	width: 60px;
+	height: 25px;
+	margin-top: -25px;
+	margin-left: 260px;
+}
+.select2{
+	width: 60px;
+	height: 25px;
+	margin-top: -25px;
+	margin-left: 320px;
+}
+.select3{
+	width: 60px;
+	height: 25px;
+	margin-top: -25px;
+	margin-left: 380px;
+}
+
+/* 关闭按钮 */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

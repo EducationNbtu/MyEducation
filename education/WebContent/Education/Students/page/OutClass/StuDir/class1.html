@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C++基础语法第7课课后</title>
+    <link rel="stylesheet" href="../../../css/page/StuClass/student_Inclass.css">
+    <script src="../../../js/jquery.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+</head>
+<body>
+
+<div class="title-bg" style="top: 20px;left: 20px;">
+    <p class="title-info" style="top: 10px;left: 300px;">课程：C++基础语法&nbsp&nbsp第七课复习</p>
+    <p class="title-info" style="top: 40px;left: 25px;">内容：循环结构（一）</p>
+    <p class="title-info" style="top: 65px;left: 25px;">目标：掌握for循环的写法和简单应用</p>
+    <p class="title-info" style="top: 90px;left: 25px;">知识点课程序号：7</p>
+    <p class="title-info" style="top: 90px;left: 260px;">课次：7</p>
+</div>
+
+<p class="mooc-title" style="top: 170px;left: 20px;">知识点</p>
+<div class="mooc-divide1" style="top: 190px;left: 120px;"></div>
+<div class="mooc-divide2" style="top: 195px;left: 140px;"></div>
+
+<div class="title-bg" style="width: 900px;height: 100px;background-color: #ffffff;border-radius: 10px;top: 210px; left: 20px">
+    <p class="mooc-title" style="top: 37px;left: 20px;color: #017FFF;font-weight:normal;">一重循环</p>
+    <p class="mooc-title" style="top: 40px;left: 150px;color: #2b2b2b;font-size: 20px;font-weight:normal;">预计复习用时：10min</p>
+    <p class="mooc-title" style="top: 10px;left: 440px;color: #2b2b2b;font-size: 20px;font-weight:normal;">最高分：7</p>
+    <p class="mooc-title" style="top: 40px;left: 440px;color: #2b2b2b;font-size: 20px;font-weight:normal;">最低分：3</p>
+    <p class="mooc-title" style="top: 70px;left: 440px;color: #2b2b2b;font-size: 20px;font-weight:normal;">平均分：5</p>
+    <a class="mooc-title endup" href="#" style="top: 37px;left: 600px;font-weight:normal;color: #007fff;">查看详细</a>
+    <a class="mooc-title endup" href="#" style="top: 37px;left: 750px;font-weight:normal;color: #007fff;">例题练习</a>
+</div>
+
+<div class="title-bg" style="width: 900px;height: 100px;background-color: #ffffff;border-radius: 10px;top: 330px; left: 20px">
+    <p class="mooc-title" style="top: 37px;left: 20px;color: #017FFF;font-weight:normal;">二重循环</p>
+    <p class="mooc-title" style="top: 40px;left: 150px;color: #2b2b2b;font-size: 20px;font-weight:normal;">预计复习用时：10min</p>
+    <p class="mooc-title" style="top: 10px;left: 440px;color: #2b2b2b;font-size: 20px;font-weight:normal;">最高分：7</p>
+    <p class="mooc-title" style="top: 40px;left: 440px;color: #2b2b2b;font-size: 20px;font-weight:normal;">最低分：3</p>
+    <p class="mooc-title" style="top: 70px;left: 440px;color: #2b2b2b;font-size: 20px;font-weight:normal;">平均分：5</p>
+    <a class="mooc-title endup" href="#" style="top: 37px;left: 600px;font-weight:normal;color: #007fff;">查看详细</a>
+    <a class="mooc-title endup" href="#" style="top: 37px;left: 750px;font-weight:normal;color: #007fff;">例题练习</a>
+</div>
+
+<div class="title-bg" style="width: 900px;height: 100px;background-color: #ffffff;border-radius: 10px;top: 450px; left: 20px">
+    <p class="mooc-title" style="top: 37px;left: 20px;color: #017FFF;font-weight:normal;">三重循环</p>
+    <p class="mooc-title" style="top: 40px;left: 150px;color: #2b2b2b;font-size: 20px;font-weight:normal;">预计复习用时：10min</p>
+    <p class="mooc-title" style="top: 10px;left: 440px;color: #2b2b2b;font-size: 20px;font-weight:normal;">最高分：7</p>
+    <p class="mooc-title" style="top: 40px;left: 440px;color: #2b2b2b;font-size: 20px;font-weight:normal;">最低分：3</p>
+    <p class="mooc-title" style="top: 70px;left: 440px;color: #2b2b2b;font-size: 20px;font-weight:normal;">平均分：5</p>
+    <a class="mooc-title endup" href="#" style="top: 37px;left: 600px;font-weight:normal;color: #007fff;">查看详细</a>
+    <a class="mooc-title endup" href="#" style="top: 37px;left: 750px;font-weight:normal;color: #007fff;">例题练习</a>
+</div>
+
+<div class="title-bg" style="top: 20px;right: 5px;width: 330px;height: 300px;">
+    <p class="title-info" style="top: 10px;left: 10px;">本人知识点掌握情况</p>
+    <div class="title-bg" style="top: 40px;right: 5px;width: 320px;height: 255px; background-color: #f9f9f9" id="person_abi"></div>
+</div>
+<div class="title-bg" style="top: 340px;right: 5px;width: 330px;height: 300px;">
+    <p class="title-info" style="top: 10px;left: 10px;">班级第一知识点掌握情况</p>
+    <div class="title-bg" style="top: 40px;right: 5px;width: 320px;height: 255px; background-color: #f9f9f9" id="first_abi"></div>
+</div>
+</body>
+</html>
+<script>
+    var myChart = echarts.init(document.getElementById('person_abi'));
+
+    option = {backgroundColor:"#FFF",
+        radar: {
+            name: {
+                textStyle: {
+                    color: '#999999',
+                }
+            },
+            splitArea: {
+                areaStyle: {
+                    color: ['#fff', '#fff', '#fff', '#fff'],
+                    shadowColor: 'rgba(0, 100, 0, 0.3)'
+                }
+            },
+            indicator: [
+                {name: '顺序结构', max: 10},
+                {name: '分支结构', max: 10},
+                {name: '循环结构', max: 10},
+                {name: '数组', max: 10},
+                {name: '字符', max: 10},
+                {name: '算法1', max: 10},
+                {name: '算法2', max: 10}
+            ]
+        },
+        series: [{
+            type: 'radar',
+            data: [
+                {
+                    value: [10, 9, 8, 7, 6, 5, 4],
+                    name: 'DATA',
+                    itemStyle: {
+                        normal: {
+                            color: 'rgba(5, 128, 242, 0.5)'
+                        }
+                    },
+                    areaStyle: {
+                        normal: {
+                            color: '#37A2DA'
+                        }
+                    }
+                }
+            ]
+        }]
+    }
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option,true);
+</script>
+<script>
+    var myChart1 = echarts.init(document.getElementById('first_abi'));
+
+    option = {backgroundColor:"#FFF",
+        radar: {
+            name: {
+                textStyle: {
+                    color: '#999999',
+                }
+            },
+            splitArea: {
+                areaStyle: {
+                    color: ['#fff', '#fff', '#fff', '#fff'],
+                    shadowColor: 'rgba(0, 100, 0, 0.3)'
+                }
+            },
+            indicator: [
+                {name: '顺序结构', max: 10},
+                {name: '分支结构', max: 10},
+                {name: '循环结构', max: 10},
+                {name: '数组', max: 10},
+                {name: '字符', max: 10},
+                {name: '算法1', max: 10},
+                {name: '算法2', max: 10}
+            ]
+        },
+        series: [{
+            type: 'radar',
+            data: [
+                {
+                    value: [10, 9, 8, 7, 6, 5, 4],
+                    name: 'DATA',
+                    itemStyle: {
+                        normal: {
+                            color: 'rgba(5, 128, 242, 0.5)'
+                        }
+                    },
+                    areaStyle: {
+                        normal: {
+                            color: '#37A2DA'
+                        }
+                    }
+                }
+            ]
+        }]
+    }
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart1.setOption(option,true);
+</script>

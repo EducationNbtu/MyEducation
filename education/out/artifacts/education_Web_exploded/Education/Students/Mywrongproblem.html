@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的错题</title>
+		<link rel="stylesheet" type="text/css" href="css/All.css"/>
+		<link rel="stylesheet" type="text/css" href="css/PageUniverse.css"/>
+		<style>
+	#div1{
+	width: 1920px;
+	
+
+}
+	#table1{
+	width: 1800px;
+	height: 180px;
+	border-top-width: : 2px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-top-color: #f0f0f0;
+	border-left-color:#f0f0f0;
+	font-size: 25px;
+	border-collapse: collapse;
+
+}
+	#table1 th,#table1 td{
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #f0f0f0;
+	border-bottom-color: #f0f0f0;
+	height: 50px;
+	text-align: center;
+
+}
+#td1,#td2,#td4,#td6{
+	width:100px; 
+}
+#td5{
+	width: 150px;
+}
+#td3{
+	width: 1150px;
+}
+#tr1,#td7,#td8{
+	background: #e2eafd;
+}
+
+#div2{
+	width: 1800px;
+	margin:auto;
+}
+.checkbox1{
+	width: 20px;
+	height: 20px;
+}
+</style>
+	</head>
+	<body>
+		<p class="title" style="top: 30px; left: 850px;">我的错题</p>
+		
+		<div class="divideline" style="left: 60px; top: 120px;"></div>
+		<div class="deladd-bg" style="left: 60px; top: 125px;">
+			<div class="deladd-button" style="left: 20px; top: 10px;background-color: #DF504C;">
+				<img src="img/delete.png" class="deladd-img" style="left: 15px; top: 10px;"/>
+				<p class="deladd-name" style="left: 60px; top: 12px;">批量删除</p>
+			</div>
+			
+			<div class="deladd-button" style="left: 210px; top: 10px;background-color: #5A99DF;">
+				<img src="img/add.png" class="deladd-img" style="left: 15px; top: 10px;"/>
+				<p class="deladd-name" style="left: 60px; top: 12px;">添加错题</p>
+			</div>
+			
+			<p class="deladd-name" style="right: 40px;top: 20px;font-size: 25px;font-weight: bold;color: #000000;">共有数据：&nbsp;2条</p>
+		</div>
+		<div class="divideline" style="left: 60px; top: 195px;"></div>
+		
+		<p class="searchword" style="top: 230px;right: 460px; color: #000000;">从当前问答中搜索：</p>
+		<input type="text" class="searchinput" style="top: 220px;right: 160px;"  value="请输入关键字"/>
+		<input type="button" value="搜索" class="searchbutton" src="img/search.png" style="top: 220px;right: 60px;"></input>
+		
+		<div id="div1" style="position: absolute;top: 300px;">
+		<div id="div2">
+		<table id="table1">
+		<tr id="tr1">
+		<td id="td9"><input type="checkbox" class="checkbox1"></td>
+		<td id="td1">序号</td>
+		<td id="td2">代码</td>
+		<td id="td3">标题</td>
+		<td id="td4">难度</td>
+		<td id="td5">类型</td>
+		<td id="td6">正确/提交</td>
+		</tr>
+		<tr>
+		<td id="td9"><input type="checkbox" class="checkbox1"></td>
+		<td>1</td>
+		<td id="td7">1</td>
+		<td>for。。。。。。。。</td>
+		<td>☆</td>
+		<td></td>
+		<td class="td1-1">0/4</td>
+		</tr>
+		<tr>
+		<td id="td9"><input type="checkbox" class="checkbox1"></td>
+		<td>2</td>
+		<td id="td7">2</td>
+		<td>快速排序。。。。</td>
+		<td>☆</td>
+		<td>。。。</td>
+		<td class="td1-1">0/4</td>
+		</tr>
+		</table>
+	</div>
+	</div>
+	
+		
+		
+		<p class="tail-word" style="left: 80px; bottom: 100px;" >显示&nbsp;1&nbsp;到&nbsp;2&nbsp;条，共&nbsp;2&nbsp;条</p>
+		<div class="pageud-bg" style="right: 100px; bottom: 80px;">
+			<a class="tail-word" href="#" style="left: 20px; top: 10px;">下一页</a>
+		</div>
+		<div class="pagenum-bg page-selected" style="right: 210px; bottom: 80px;">
+			<a class="tail-word" href="#" style="left: 20px; top: 10px;">1</a>
+		</div>
+		<div class="pageud-bg " style="right: 270px; bottom: 80px;">
+			<a class="tail-word" href="#" style="left: 20px; top: 10px;">上一页</a>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上课</title>
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../js/curse_manage.js"></script>
+    <link rel="stylesheet" href="../../css/page/InClass.css" />
+    <link rel="stylesheet" href="../../css/jquery-ui.css" />
+</head>
+<style>
+    a{
+        text-decoration:none;
+        text-align: center;
+        color: #40A9ff;
+        display: block;
+    }
+ 
+    span{
+        valign:middle;
+        align:center;
+        text-align: center;
+        display: block;
+    }
+</style>
+<body>
+<div class="filterClass">
+ <span style="display: block;float: left;">c++课程>王老师班>课时1>上课中</span><br><br>
+ <hr style="background-color: #eeeeee;border: none;height: 1px;">
+ <br>
+<!--
+    <div class="searchDiv">
+        <img src="../../image/icon-search.png" />
+        <input id="keywordInput" type="text" />
+    </div>
+    <div class="dateDiv">
+        <input type="text" id="dateFrom">至<input type="text" id="dateTo">
+    </div>-->
+     <input id="searchBtn" class="btnClass" type="button" value="入门测" style="background-color:#8fafd8;" />
+   
+    <input id="searchBtn" class="btnClass" type="button" value="课堂讲解" style="background-color:#55c4f2;" />
+     <input id="searchBtn" class="btnClass" type="button" value="出门测" style="background-color:#0577bd;" />
+     <input id="searchBtn" class="btnClass" type="button" value="课后练习" />
+   
+     <div class="logg"></div>
+     <span  style="position: relative;left: 10%;border: 1px solid red;width: 40%;"><a id="b" href="#" style="display: inline;" >签到表</a> </span>
+ 
+    <span id="log" style="position: relative;top: -15%;left: 20%;"><a href="#" >签退表</a> </span>
+
+   
+</div>
+<!--<div class="toolsBar">-->
+<!--<input id="addBtn" class="btnClass" type="button" value="+&nbsp新增" />-->
+<!--</div>-->
+<div class="tableClass">
+    <table class="dataTable" cellspacing="0">
+        <thead>
+        <tr>
+            <th class="col1">
+                <span>序号</span>
+            </th>
+            <th class="col2">
+                <span>标题</span>
+            </th>
+            <th class="col3">
+                <span>类型</span>
+            </th>
+            <th class="col4">
+                <span>难度</span>
+            </th>
+            <th class="col5">
+                <span>开始时间</span>
+            </th>
+            <th class="col6">
+                <span>结束时间</span>
+            </th>
+            <th class="col7">
+                <span>状态</span>
+            </th>
+            <th class="col8">
+                <span>操作</span>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="funscrach">
+            <td class="col1">
+                <span>1</span>
+            </td>
+            <td class="col2 classname" value="-1">
+                <span >三重循环1</span>
+            </td>
+            <td class="col3">
+                <span>入门测</span>
+            </td>
+            <td class="col4">
+                <span>☆☆</span>
+            </td>
+            <td class="col5">
+                <span>2018-01-02</span>
+            </td>
+            <td class="col6">
+                <span>2018-06-02</span>
+            </td>
+            <td class="col7">
+                <span style="font-weight: bold" class="status" id="a">进行中</span>
+            </td>
+            <td class="col8" >
+                <a  href="javascript:void(0);">实战/排名/做题情况</a>
+            </td>
+        </tr>
+        <tr id="CPPbase">
+             <td class="col1">
+                <span>2</span>
+            </td>
+            <td class="col2 classname" value="-1">
+                <span >三重循环2</span>
+            </td>
+            <td class="col3">
+                <span>出门测</span>
+            </td>
+            <td class="col4">
+                <span>☆☆</span>
+            </td>
+            <td class="col5">
+                <span>2018-01-02</span>
+            </td>
+            <td class="col6">
+                <span>2018-06-02</span>
+            </td>
+            <td class="col7">
+                <span style="color:Gray;font-weight: bold" class="status" >已结束</span>
+            </td>
+            <td class="col8">
+                <a href="javascript:void(0);">实战/排名/做题情况</a>
+            </td>
+        </tr>
+        <tr id="CPPprimary">
+             <td class="col1">
+                <span>3</span>
+            </td>
+            <td class="col2 classname" value="-1">
+                <span >三重循环3</span>
+            </td>
+            <td class="col3">
+                <span>课堂讲解</span>
+            </td>
+            <td class="col4">
+                <span>☆☆</span>
+            </td>
+            <td class="col5">
+                <span>2018-01-02</span>
+            </td>
+            <td class="col6">
+                <span>2018-06-02</span>
+            </td>
+            <td class="col7">
+                <span style="color:Gray;font-weight: bold" class="status" >已结束</span>
+            </td>
+            <td class="col8">
+                <a href="javascript:void(0);">实战/排名/做题情况</a>
+            </td>
+        </tr>
+         <tr id="CPPprimary">
+             <td class="col1">
+                <span>4</span>
+            </td>
+            <td class="col2 classname" value="-1">
+                <span >三重循环4</span>
+            </td>
+            <td class="col3">
+                <span>课后练习</span>
+            </td>
+            <td class="col4">
+                <span>☆☆</span>
+            </td>
+            <td class="col5">
+                <span>2018-01-02</span>
+            </td>
+            <td class="col6">
+                <span>2018-06-02</span>
+            </td>
+            <td class="col7">
+                <span style="color:Gray;font-weight: bold" class="status" >已结束</span>
+            </td>
+            <td class="col8">
+                <a href="javascript:void(0);">实战/排名/做题情况</a>
+            </td>
+        </tr>
+         <tr id="CPPprimary">
+             <td class="col1">
+                <span>3</span>
+            </td>
+            <td class="col2 classname" value="-1">
+                <span >三重循环5</span>
+            </td>
+            <td class="col3">
+                <span>入门测</span>
+            </td>
+            <td class="col4">
+                <span>☆☆</span>
+            </td>
+            <td class="col5">
+                <span>2018-01-02</span>
+            </td>
+            <td class="col6">
+                <span>2018-06-02</span>
+            </td>
+            <td class="col7">
+                <span style="color:Gray;font-weight: bold" class="status" >已结束</span>
+            </td>
+            <td class="col8">
+                <a href="javascript:void(0);">实战/排名/做题情况</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="paginationClass">
+    <div style="float: right;">
+        <div class="pageDiv prefixClass">&lt;</div>
+        <div class="pageDiv pageIndex pageSelected">1</div>
+        <div class="pageDiv pageIndex">2</div>
+        <div class="pageDiv pageIndex">3</div>
+        <div class="pageDiv pageIndex">4</div>
+        <div class="pageDiv pageIndex">5</div>
+        <div class="pageDiv suffixClass">&gt;</div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(".classname").click(function(){
+
+        var str = $(this).attr("value");
+        // alert(str);
+
+        if(str == -1){
+            alert("此课程已结束");
+        }
+        else if(str == 1){
+            alert("此课程未开始");
+        }
+        else{
+            window.location.href="Course/CPPgrammer.html";
+        }
+    });
+</script>

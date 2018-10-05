@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>修改密码</title>
+	<style type="text/css">
+       .main
+       {
+       	width: 1400px;
+       	height: 800px;
+        background-color:#d4ebdb;
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 50px;
+       }
+       .content
+       {
+       	width: 500px;
+       	height: 600px;
+       	margin: 100px 100px 100px 100px;
+       }
+       .head_photo
+       {
+        width: 120px;
+        height: 120px;
+        border: 1px solid white;
+        position: absolute;
+        left: 1000px;
+        top: 100px;
+         border-radius: 50%;
+          overflow: hidden;
+          margin: auto;
+          cursor: pointer;
+       }
+       #a:hover
+       {
+        opacity: 0.8;
+       }
+       #b:hover
+       {
+        opacity: 0.8;
+       }
+        
+	</style>
+</head>
+<body>
+  <div class="main">
+    
+    <div class="content">
+       <form>
+       <br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: black;font-family: 幼圆;font-size: 23px;">昵称：</span>
+            <input type="text" id="aaa" name="" style="outline: none;border: 0;height: 35px;width: 200px;background-color: #f6f6f6;border-radius: 5px;">
+           <br><br><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: black;font-family: 幼圆;font-size: 23px;">性别：</span>
+           <input type="text" id="aaa" name="" style="outline: none;border: 0;height: 35px;width: 200px;background-color: #f6f6f6;border-radius: 5px;">
+            <br><br><br>
+             &nbsp;&nbsp;&nbsp;<span style="color: black;font-family: 幼圆;font-size: 23px;">所在学校：</span>
+           <input type="text" id="aaa" name="" style="outline: none;border: 0;height: 35px;width: 200px;background-color: #f6f6f6;border-radius: 5px;">
+           <br><br><br>
+             &nbsp;&nbsp;&nbsp;<span style="color: black;font-family: 幼圆;font-size: 23px;">所在年级：</span>
+           <input type="text" id="aaa" name="" style="outline: none;border: 0;height: 35px;width: 200px;background-color: #f6f6f6;border-radius: 5px;">
+           <div class="head_photo">
+               <img src="image/img14.png" width="120" height="120">
+           </div>
+  
+            <br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+          
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" id="a" name="" value="重置" style="width:100px;height: 45px;line-height: 45px;font-family: 幼圆;font-size: 20px;color: white;background-color: #c19f9a;outline: none;border: 0;border-radius: 6px;cursor: pointer; " onclick="resetValue()">
+            <br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+          
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" id="b" name="" value="保存" style="width:100px;height: 45px;line-height: 45px;font-family: 幼圆;font-size: 20px;color: white;background-color: #4c86ff;outline: none;border: 0;border-radius: 6px;cursor: pointer; " >
+       </form>
+    </div>
+   <input type="submit" id="b" name="" value="更改头像" style="width:100px;height: 45px;line-height: 45px;font-family: 幼圆;font-size: 20px;color: white;background-color: #4c86ff;outline: none;border: 0;border-radius: 6px;cursor: pointer;display: block;position: absolute;left: 1150px;top: 170px; " >
+  </div>
+	
+</body>
+</html>
+<script type="text/javascript">
+  function resetValue()
+{
+	document.getElementById('aaa').value="";
+    document.getElementById('bbb').value="";
+}
+
+</script>

@@ -1,0 +1,542 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>课程管理</title>
+	<style>
+		
+		#lesson{
+			
+			width: 1686px;
+			height: 986px;
+			
+		}
+		#btn1{
+			background-color: #ff3333;
+			color: white;
+			width: 150px;
+			height: 60px;
+			border-radius: 10px;
+			border: 0;
+			position: absolute;
+			left: 50px;
+			top: 50px;
+		}
+		#btn1:hover{
+			cursor: pointer;
+		}
+		#btn2{
+			background-color: #169bd5;
+			color: white;
+			width: 150px;
+			height: 60px;
+			border-radius: 10px;
+			border: 0;
+			position: absolute;
+			left: 250px;
+			top: 50px;
+		}
+		#btn2:hover{
+			cursor: pointer;
+		}
+		#checkbox{
+			height: 500px;
+			position: absolute;
+			left: 20px;
+			top: 120px;
+
+		}
+		#checkbox input{
+			width: 25px;
+			height: 25px;
+		}
+		#table1{
+			width: 1250px;
+			height: 500px;
+			position: absolute;
+			left: 70px;
+			top: 120px;
+			color: white;
+		}
+		#table1 tr{
+			height: 50px;
+		}
+		#table1 td{
+			border: 0.5px solid gray;
+			text-align: center;
+		}
+		#tr1{
+			background-color: #4e84fe;
+		}
+		#td1,#td2,#td3{
+			width: 130px;
+		}
+		
+		#td4{
+			width: 160px;
+		}
+		#td5,#td6,#td7,#td8{
+			width: 120px;
+		}
+		.lesson_image1{
+			position: relative;
+			left:-20px;
+		}
+		.lesson_image2{
+			position: relative;
+			left:0px;
+		}
+
+		.lesson_image3{
+			position: relative;
+			left:20px;
+		}
+		.lesson_image4{
+			position: relative;
+			left:40px;
+		}
+		.lesson_image1:hover{
+			cursor: pointer;
+		}
+		.lesson_image2:hover{
+			cursor: pointer;
+		}
+		.lesson_image3:hover{
+			cursor: pointer;
+		}
+		.lesson_image4:hover{
+			cursor: pointer;
+		}
+		#teachingprogram{
+			background-color: #f6f6f6;
+			width:900px;
+			height: 700px;
+			position: absolute;
+			border-radius: 10px;
+			border: 1px solid gray;
+			display: none;
+		}
+		#knowledge{
+			background-color: #f6f6f6;
+			width:900px;
+			height: 700px;
+			position: absolute;
+			border-radius: 10px;
+			border: 1px solid gray;
+			display: none;
+		}
+		#course{
+			background-color: #f6f6f6;
+			width:900px;
+			height: 700px;
+			position: absolute;
+			border-radius: 10px;
+			border: 1px solid gray;
+			display: none;
+		}
+		.tea_header{
+			background-color:#4e84fe; 
+			height: 100px;
+			border-radius: 10px;
+		}
+		.tea_span1{
+			color: white;
+			font-size: 40px;
+			position: absolute;
+			left: 30px;
+			top: 20px;
+		}
+		.tea_span2-1,.tea_span2-2,.tea_span2-3{
+			color: white;
+			font-size: 80px;
+			position: absolute;
+			right: 100px;
+			top: 0px;
+		}
+		.tea_span2-1:hover{
+			cursor: pointer;
+		}
+		.tea_span2-2:hover{
+			cursor: pointer;
+		}
+		.tea_span2-3:hover{
+			cursor: pointer;
+		}
+		.tea_span3-1,.tea_span3-2,.tea_span3-3{
+			color: #cc0066;
+			font-size: 50px;
+			position: absolute;
+			right: 30px;
+			top: 20px;
+		}
+		.tea_span3-1:hover{
+			cursor: pointer;
+		}
+		.tea_span3-2:hover{
+			cursor: pointer;
+		}
+		.tea_span3-3:hover{
+			cursor: pointer;
+		}
+		.tea_div1{
+			text-align: center;
+			background-color: #169bd5;
+			width: 120px;
+			height: 60px;
+			border-radius: 10px;
+			position: absolute;
+			left: 80px;
+			top: 140px;
+		}
+		
+		.tea_input1{
+			position: absolute;
+			left: 250px;
+			top: 140px;
+			width: 250px;
+			height: 55px;
+			box-shadow: -3px -3px 1px #888888;
+			background-color: #f6f6f6;
+		}
+		.tea_div2{
+			text-align: center;
+			background-color: #169bd5;
+			width: 120px;
+			height: 60px;
+			border-radius: 10px;
+			position: absolute;
+			left: 80px;
+			top: 240px;
+		}
+		.tea_image{
+			zoom:0.2;
+			position: absolute;
+			left: 1250px;
+			top: 1200px;
+		}
+		.tea_input2{
+			border-radius: 10px;
+			position: absolute;
+			left: 500px;
+			top: 255px;
+			width: 140px;
+			height: 60px;
+			background-color: #f6f6f6;
+			border: 1px solid gray;
+		}
+		.tea_input2:hover{
+			cursor: pointer;
+		}
+		.tea_div3{
+			text-align: center;
+			background-color: #169bd5;
+			width: 120px;
+			height: 60px;
+			border-radius: 10px;
+			position: absolute;
+			left: 80px;
+			top: 380px;
+		}
+		.tea_input3{
+			position: absolute;
+			left: 250px;
+			top: 380px;
+			width: 570px;
+			height: 55px;
+			box-shadow: -3px -3px 1px #888888;
+			background-color: #f6f6f6;
+		}
+		.tea_div4{
+			text-align: center;
+			background-color: #169bd5;
+			width: 120px;
+			height: 60px;
+			border-radius: 10px;
+			position: absolute;
+			left: 80px;
+			top: 480px;
+		}
+		
+		.tea_input4{
+			position: absolute;
+			left: 250px;
+			top: 480px;
+			width: 570px;
+			height: 55px;
+			box-shadow: -3px -3px 1px #888888;
+			background-color: #f6f6f6;
+		}
+		.tea_div5{
+			text-align: center;
+			background-color: #169bd5;
+			width: 120px;
+			height: 60px;
+			border-radius: 10px;
+			position: absolute;
+			left: 80px;
+			top: 580px;
+		}
+		
+		.tea_input5{
+			position: absolute;
+			left: 250px;
+			top: 580px;
+			width: 250px;
+			height: 55px;
+			box-shadow: -3px -3px 1px #888888;
+			background-color: #f6f6f6;
+		}
+		.tea_input6{
+			background-color: #f7981c;
+			color: white;
+			border: 0;
+			border-radius: 10px;
+			width: 120px;
+			height: 60px;
+			position: absolute;
+			right: 150px;
+			bottom: 10px;
+		}
+		.tea_input6:hover{
+			cursor: pointer;
+		}
+		.center{
+			position: relative;
+			top:10px;
+			color: white;
+		}
+		.tea_state{
+			position: absolute;
+			left: 300px;
+			top: 590px;
+		}
+		.tea_input7{
+			width: 30px;
+			height: 30px;
+		}
+		.tea_input8{
+			background-color: #f7981c;
+			color: white;
+			border: 0;
+			border-radius: 10px;
+			width: 120px;
+			height: 60px;
+			position: absolute;
+			right: 50px;
+			bottom: 10px;
+		}
+		.tea_input8:hover{
+			cursor: pointer;
+		}
+		.tea_input9{
+			background-color: #f7981c;
+			color: white;
+			border: 0;
+			border-radius: 10px;
+			width: 120px;
+			height: 60px;
+			position: absolute;
+			right: 150px;
+			bottom: 50px;
+		}
+		.tea_input9:hover{
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+	<script>
+		$(function(){
+			$('#teachingprogram').css('left',($(window).width()-$('#teachingprogram').width())/2);
+			$('#teachingprogram').css('top',($(window).height()-$('#teachingprogram').height())/2);
+
+			$('#knowledge').css('left',($(window).width()-$('#knowledge').width())/2);
+			$('#knowledge').css('top',($(window).height()-$('#knowledge').height())/2);
+
+			$('#course').css('left',($(window).width()-$('#course').width())/2);
+			$('#course').css('top',($(window).height()-$('#course').height())/2);
+
+			$('.lesson_image1').click(function(){
+				$('#teachingprogram').css('display','block');
+			});
+			$('.lesson_image2').click(function(){
+				$('#knowledge').css('display','block');
+			});
+			$('#btn2').click(function(){
+				$('#course').css('display','block');
+			})
+			$('.tea_span3-1').click(function(){
+				$('#teachingprogram').css('display','none');
+			})
+			$('.tea_span3-2').click(function(){
+				$('#knowledge').css('display','none');
+			})
+			$('.tea_span3-3').click(function(){
+				$('#course').css('display','none');
+			})
+		});
+	</script>
+</head>
+
+<body>		
+	<div id="lesson">
+		<input type="button" id="btn1" value="批量删除" />
+		<input type="button" id="btn2" value="添加课程" />
+
+		<table id="checkbox">
+			<tr><td><input type="checkbox" id="check1" /></td></tr>
+			<tr><td><input type="checkbox" id="check2" /></td></tr>
+			<tr><td><input type="checkbox" id="check3" /></td></tr>
+			<tr><td><input type="checkbox" id="check4" /></td></tr>
+			<tr><td><input type="checkbox" id="check5" /></td></tr>
+			<tr><td><input type="checkbox" id="check6" /></td></tr>
+			<tr><td><input type="checkbox" id="check7" /></td></tr>
+			<tr><td><input type="checkbox" id="check8" /></td></tr>
+			<tr><td><input type="checkbox" id="check9" /></td></tr>
+			<tr><td><input type="checkbox" id="check10" /></td></tr>
+		</table>
+		<table id="table1" cellspacing="0" >
+			<tr id="tr1">
+				<td id="td1">序号</td><td  id="td2">标题</td><td id="td3">图片</td><td id="td4">概述</td><td id="td5">创建时间</td><td id="td6">创建人</td><td id="td7">目标</td><td id="td8">状态</td><td id="td9">操作</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="lesson_image1" /><img src="image/add_2.png" class="lesson_image2" /><img src="image/delete.png" class="lesson_image3" /><img src="image/update.png" class="lesson_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="lesson_image1" /><img src="image/add_2.png" class="lesson_image2" /><img src="image/delete.png" class="lesson_image3" /><img src="image/update.png" class="lesson_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="lesson_image1" /><img src="image/add_2.png" class="lesson_image2" /><img src="image/delete.png" class="lesson_image3" /><img src="image/update.png" class="lesson_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="lesson_image1" /><img src="image/add_2.png" class="lesson_image2" /><img src="image/delete.png" class="lesson_image3" /><img src="image/update.png" class="lesson_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="lesson_image1" /><img src="image/add_2.png" class="lesson_image2" /><img src="image/delete.png" class="lesson_image3" /><img src="image/update.png" class="lesson_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="lesson_image1" /><img src="image/add_2.png" class="lesson_image2" /><img src="image/delete.png" class="lesson_image3" /><img src="image/update.png" class="lesson_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="lesson_image1" /><img src="image/add_2.png" class="lesson_image2" /><img src="image/delete.png" class="lesson_image3" /><img src="image/update.png" class="lesson_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="lesson_image1" /><img src="image/add_2.png" class="lesson_image2" /><img src="image/delete.png" class="lesson_image3" /><img src="image/update.png" class="lesson_image4" />
+				</td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td>
+					<img src="image/add_1.png" class="lesson_image1" /><img src="image/add_2.png" class="lesson_image2" /><img src="image/delete.png" class="lesson_image3" /><img src="image/update.png" class="lesson_image4" />
+				</td>
+			</tr>
+		</table>
+	</div>
+
+
+
+	<div id="teachingprogram">
+		<div class="tea_header">
+			<span class="tea_span1">添加教学计划</span>
+			<span class="tea_span2-1">-</span>
+			<span class="tea_span3-1">×</span>
+		</div>
+			<div class="tea_div1"><span class="center">标题</span></div>
+			<input type="text" class="tea_input1" />
+
+			<div class="tea_div2"><span class="center">图片</span></div>
+			<img src="image/风景1.jpg" class="tea_image" />
+			<input type="button" value="导入" class="tea_input2"/>
+
+			<div class="tea_div3"><span class="center">内容</span></div>
+			<input type="text" class="tea_input3" />
+
+			<div class="tea_div4"><span class="center">面向对象</span></div>
+			<input type="text" class="tea_input4" />
+
+			<div class="tea_div5"><span class="center">总课时</span></div>
+			<input type="text" class="tea_input5" />
+
+			<input type="button" value="提交" class="tea_input6" />	
+	</div>
+	
+
+	<div id="knowledge">
+		<div class="tea_header">
+			<span class="tea_span1">修改课程</span>
+			<span class="tea_span2-2">-</span>
+			<span class="tea_span3-2">×</span>
+		</div>
+
+			<div class="tea_div1"><span class="center">标题</span></div>
+			<input type="text" class="tea_input1" />
+
+			<div class="tea_div2"><span class="center">图片</span></div>
+			<img src="image/风景1.jpg" class="tea_image" />
+			<input type="button" value="导入" class="tea_input2"/>
+
+			<div class="tea_div3"><span class="center">概述</span></div>
+			<input type="text" class="tea_input3" />
+
+			<div class="tea_div4"><span class="center">目标</span></div>
+			<input type="text" class="tea_input4" />
+
+			<div class="tea_div5"><span class="center">状态</span></div>
+			<div class="tea_state">
+				<input type="radio" name="state" value="正常" class="tea_input7" />正常
+				<input type="radio" name="state" value="待审核" class="tea_input7"/>待审核
+				<input type="radio" name="state" value="已停用" class="tea_input7"/>已停用
+			</div>
+				
+			<input type="button" value="提交" class="tea_input8" />	
+	</div>
+
+
+	<div id="course">
+		<div class="tea_header">
+			<span class="tea_span1">添加课程</span>
+			<span class="tea_span2-3">-</span>
+			<span class="tea_span3-3">×</span>
+		</div>
+			<div class="tea_div1"><span class="center">标题</span></div>
+			<input type="text" class="tea_input1" />
+
+			<div class="tea_div2"><span class="center">图片</span></div>
+			<img src="image/风景1.jpg" class="tea_image" />
+			<input type="button" value="导入" class="tea_input2"/>
+
+			<div class="tea_div3"><span class="center">概述</span></div>
+			<input type="text" class="tea_input3" />
+
+			<div class="tea_div4"><span class="center">目标</span></div>
+			<input type="text" class="tea_input4" />
+
+			<input type="button" value="提交" class="tea_input9" />	
+	</div>
+
+
+	
+</body>
+</html>

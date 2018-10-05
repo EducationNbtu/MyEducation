@@ -1,0 +1,361 @@
+
+.主体
+{
+	width: 1692px;
+	height: 888px;
+}
+.左框
+{
+	width: 303px;
+	height: 759px;
+	z-index: 2;
+	position: absolute;
+	top: 0px;
+	box-shadow: 0px 0px 8px 4px #516c84 inset;
+	border-radius: 5px;
+	
+}
+.bc1
+{
+	width: 303px;
+	height: 759px;
+	border-radius: 5px;
+	position: absolute;
+	top: 0px;
+	background-color: #1d2f42;opacity:0.3;
+	z-index: 1;
+}
+.右标题框
+{
+	width: 507px;
+	height: 71px;
+    box-shadow: 0px 0px 8px 2px #516c84 inset;
+    border-radius: 5px;
+    position: absolute;
+    left: 1188px;
+    top: 26px;
+    background-color: #050931;
+
+}
+.右下框
+{
+	width: 1349px;
+	height: 544px;
+	position: absolute;
+	left: 392px;
+	top: 214px;
+	box-shadow: 0px 0px 12px 2px #516c84 inset;
+	border-radius: 5px;
+	z-index: 2;
+
+
+}
+.bc3
+{
+	width: 1349px;
+	height: 544px;
+	position: absolute;
+	left: 392px;
+	top: 214px;
+	z-index: 1;
+	border-radius: 5px;
+	background-color: #1d2f42;opacity:0.3;
+
+}
+.右上框
+{
+	width: 1349px;
+	height: 164px;
+	position: absolute;
+	left: 392px;
+	top: 0px;
+	box-shadow: 0px 0px 8px 4px #516c84 inset;
+	border-radius: 5px;
+	
+	z-index: 2;
+}
+.bc2
+{
+	width: 1349px;
+	height: 164px;
+	position: absolute;
+	left: 392px;
+	top: 0px;
+	border-radius: 5px;
+	z-index: 1;
+	background-color: #1d2f42;opacity:0.3;
+}
+.clear
+{
+	display: block;
+	overflow: hidden;
+}
+.标签
+{
+	display: block;
+	position: absolute;
+	top: 7px;
+}
+.居中框
+{
+	width: 275px;
+	margin: auto;
+	height: 100%;
+}
+.标题
+{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 37px;
+	color: white;
+	font-size: 13px;
+	top: 14px;
+	font-family:"幼圆" ;
+}
+.左搜寻
+{
+	border-radius: 6px;
+	width: 265px;
+	background-image: url('img/放大镜.png');
+	background-repeat:no-repeat;
+	padding-left:25px;
+
+}
+.左框列表 span
+{
+	color: white;
+	text-decoration: none;
+	font-size: 12px;
+	list-style: none;
+	margin-top: 14px;
+	
+	width: 271px;
+	line-height: 35px;
+    border-radius: 3px;
+    display: block;
+    cursor: pointer;
+
+}
+.竖线
+{
+	width: 4px;
+	height: 21px;
+	background: white;
+	position: absolute;
+	top: 14px;
+	left: 31px;
+}
+.条件查询
+{
+	display: block;
+	position: absolute;
+	left: 56px;
+	top: 14px;
+}
+.右搜索框列表 li
+{
+
+   float: left;
+   width: 170px;
+   margin-left: 37px;
+   height: 32px;
+   list-style: none;
+}
+.右搜索框列表 li input
+{
+	width: 151px;
+	height: 28px;
+	border-radius: 20px;
+	padding-left: 12px;
+}
+#特殊
+{
+	width: 113px;
+	height: 28px;
+	padding-left: 12px;
+}
+.右上按钮
+{
+	height: 42px;
+	width: 164px;
+    left: 1149px;
+	position: absolute;
+
+}
+.右上按钮2
+{
+	height: 42px;
+	width: 164px;
+    left: 1149px;
+	position: absolute;
+	border: 1px solid white;
+	
+}
+.右上按钮2 ul li
+{
+	list-style: none;
+	border: 1px solid red;
+}
+.右上按钮 input
+{
+	border-radius: 12px;
+	background-color: #55B1FE;
+	color: white;
+	font-size: 8px;
+	text-align: center;
+	width: 65px;
+	height: 35px;
+	font-family: "幼圆";
+	border: 0;
+	outline: none;
+}
+.右上按钮2 input
+{
+	border-radius: 12px;
+	background-color: #55B1FE;
+	color: white;
+	font-size: 8px;
+	text-align: center;
+	width: 65px;
+	height: 35px;
+	font-family: "幼圆";
+	border: 0;
+	outline: none;
+}
+.右标题框 div
+{
+	width: 107px;
+	height: 71px;
+	float: left;
+	list-style: none;
+    margin-left: 12px;
+    text-align: center;
+    padding-top: 14px;
+
+}
+.细线
+{
+	display: block;
+	position: absolute;
+	left: 107px;
+	color: white;
+	top: 7px;
+	font-size: 30px;
+}
+.细线two
+{
+	display: block;
+	position: relative;
+	left: 47px;
+	color: white;
+	top: -28px;
+	font-size: 30px;
+}
+.细线3
+{
+	display: block;
+	position: relative;
+	left: 47px;
+	color: white;
+	top: -28px;
+	font-size: 30px;
+}
+.细线4
+{
+	display: block;
+	position: relative;
+	left: 47px;
+	color: white;
+	top: -28px;
+	font-size: 30px;
+}
+.right-buttom-top
+{
+	width: 1347px;
+	height: 68px;
+	background-color:#063762;
+}
+.right-buttom-top-ul li
+{
+   list-style: none;
+   width: 170px;
+   height: 42px;
+   float: left;
+   font-family: "幼圆";
+   margin-left: 20px;
+   border-radius: 10px;
+   background-color: #2C81FF;
+   text-align: center;
+   color: white;
+   line-height: 42px;
+
+}
+.right-buttom-buttom
+{
+	width: 1347px;
+	height: 64px;
+	position: absolute;
+	top: 465px;
+}
+.buttom-button
+{
+	width: 441px;
+	height: 60px;
+	position: absolute;
+	left: 883px;
+	top: -20px;
+
+}
+.buttom-button-ul li
+{
+   width: 101px;
+   height: 35px;
+   float: left;
+   margin-left: 12px;
+   list-style: none;
+}
+.buttom-button input
+{
+	text-align: center;
+	border-radius: 12px;
+	color: white;
+	font-family: "幼圆";
+	height: 28px;
+	border: 0;
+	width: 98px;
+	cursor: pointer;
+	outline: none;
+}
+.buttom-mid
+{
+	width: 378px;
+	height: 42px;
+	margin: auto;
+}
+.data li
+{
+    margin-left: 1px;
+	height: 28px;
+	width: 145px;
+	float: left;
+	list-style: none;
+	text-align: center;
+	color: white;
+	font-size: 8px;
+	font-family: "幼圆";
+}
+.data1 li
+{
+   list-style: none;
+   width: 170px;
+   height: 42px;
+   float: left;
+   font-family: "幼圆";
+   margin-left: 20px;
+   border-radius: 10px;
+   text-align: center;
+   color: white;
+   line-height: 42px;
+   font-size: 12px;
+}

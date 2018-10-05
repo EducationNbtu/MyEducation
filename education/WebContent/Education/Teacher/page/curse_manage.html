@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>示例</title>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/curse_manage.js"></script>
+    <link rel="stylesheet" href="../css/curse_manage.css" />
+    <link rel="stylesheet" href="../css/jquery-ui.css" />
+</head>
+
+<body>
+    <div class="filterClass">
+        <div class="searchDiv">
+            <img src="../image/icon-search.png" />
+            <input id="keywordInput" type="text" />
+        </div>
+        <div class="dateDiv">
+            <input type="text" id="dateFrom">至<input type="text" id="dateTo">
+        </div>
+        <input id="searchBtn" class="btnClass" type="button" value="搜索" />
+    </div>
+    <div class="toolsBar">
+        <input id="addBtn" class="btnClass" type="button" value="+&nbsp新增" />
+    </div>
+    <div class="tableClass">
+        <table class="dataTable" cellspacing="0">
+            <thead>
+                <tr>
+                    <th class="col1">
+                        <span>Name</span>
+                    </th>
+                    <th class="col2">
+                        <span>Age</span>
+                    </th>
+                    <th class="col3">
+                        <span>Address</span>
+                    </th>
+                    <th class="col4">
+                        <span>Action</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col1">
+                        <span>John Brown</span>
+                    </td>
+                    <td class="col2">
+                        <span>32</span>
+                    </td>
+                    <td class="col3">
+                        <span>New York No. 1 Lake Park</span>
+                    </td>
+                    <td class="col4">
+                        <a href="javascript:void(0);">Action</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <span>Jim Green</span>
+                    </td>
+                    <td class="col2">
+                        <span>42</span>
+                    </td>
+                    <td class="col3">
+                        <span>London No. 1 Lake Park</span>
+                    </td>
+                    <td class="col4">
+                        <a href="javascript:void(0);">Action</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <span>Joe Black</span>
+                    </td>
+                    <td class="col2">
+                        <span>32</span>
+                    </td>
+                    <td class="col3">
+                        <span>Sidney No. 1 Lake Park</span>
+                    </td>
+                    <td class="col4">
+                        <a href="javascript:void(0);">Action</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="paginationClass">
+        <div style="float: right;">
+            <div class="pageDiv prefixClass">&lt;</div>
+            <div class="pageDiv pageIndex pageSelected">1</div>
+            <div class="pageDiv pageIndex">2</div>
+            <div class="pageDiv pageIndex">3</div>
+            <div class="pageDiv pageIndex">4</div>
+            <div class="pageDiv pageIndex">5</div>
+            <div class="pageDiv suffixClass">&gt;</div>
+        </div>
+    </div>
+</body>
+
+</html>

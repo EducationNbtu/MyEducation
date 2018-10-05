@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>教学计划管理</title>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/page/curse_manage.js"></script>
+    <link rel="stylesheet" href="../css/page/teaching_method_manage.css" />
+    <link rel="stylesheet" href="../css/jquery-ui.css" />
+</head>
+
+<body>
+    <div class="filterClass">
+        <div class="searchDiv">
+            <img src="../image/icon-search.png" />
+            <input id="keywordInput" type="text" placeholder="请输入教学安排名" style="font-size: 13px;" />
+        </div>
+        <div class="dateDiv">
+            <input type="text" id="dateFrom">至<input type="text" id="dateTo">
+        </div>
+        <input id="searchBtn" class="btnClass" type="button" value="搜索" />
+    </div>
+    <div class="toolsBar">
+        <input id="addBtn" class="btnClass" type="button" value="+ 新增" />
+    </div>
+    <div class="tableClass">
+        <table class="dataTable" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th class="col1">
+                            <span>序号</span>
+                        </th>
+                        <th class="col2">
+                            <span>编号</span>
+                        </th>
+                        <th class="col3">
+                            <span>标题</span>
+                        </th>
+                        <th class="col4">
+                            <span>总课时</span>
+                        </th>
+                        <th class="col5">
+                            <span>创建时间</span>
+                        </th>
+                        <th class="col6">
+                            <span>创建人</span>
+                        </th>
+                        <th class="col7">
+                            <span>状态</span>
+                        </th>
+                        <th class="col8">
+                            <span>所属教学计划</span>
+                        </th>
+                        <th class="col9">
+                            <span>操作</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col1">
+                            <span>1</span>
+                        </td>
+                        <td class="col2">
+                            <span>1001</span>
+                        </td>
+                        <td class="col3">
+                            <span>c++基础_计划1_安排1</span>
+                        </td>
+                        <td class="col4">
+                             <span>15</span>
+                        </td>
+                         <td class="col5">
+                           
+                            <a href="javascript:void(0);">2018/8/18</a>
+                        </td>
+                         <td class="col6">
+                            <span>张三</span>
+                        </td>
+                         <td class="col7">
+                            <span>进行中</span>
+                        </td>
+                        <td class="col8">
+                            <span>c++基础_计划1</span>
+                        </td>
+                         <td class="col9">
+                            <span><a href="#">删除</a>&nbsp;<a href="#">编辑</a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                        <td class="col1">
+                            <span>2</span>
+                        </td>
+                        <td class="col2">
+                            <span>1002</span>
+                        </td>
+                        <td class="col3">
+                            <span>c++基础_计划1_安排2</span>
+                        </td>
+                        <td class="col4">
+                             <span>15</span>
+                        </td>
+                         <td class="col5">
+                           
+                            <a href="javascript:void(0);">2018/8/18</a>
+                        </td>
+                         <td class="col6">
+                            <span>张三</span>
+                        </td>
+                         <td class="col7">
+                            <span>待审核</span>
+                        </td>
+                        <td class="col8">
+                            <span>c++基础_计划2</span>
+                        </td>
+                         <td class="col9">
+                            <span><a href="#">删除</a>&nbsp;<a href="#">编辑</a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                        <td class="col1">
+                            <span>3</span>
+                        </td>
+                        <td class="col2">
+                            <span>1003</span>
+                        </td>
+                        <td class="col3">
+                            <span>c++基础_计划1_安排3</span>
+                        </td>
+                        <td class="col4">
+                             <span>15</span>
+                        </td>
+                         <td class="col5">
+                           
+                            <a href="javascript:void(0);">2018/8/18</a>
+                        </td>
+                         <td class="col6">
+                            <span>张三</span>
+                        </td>
+                         <td class="col7">
+                            <span>已结束</span>
+                        </td>
+                        <td class="col8">
+                            <span>c++基础_计划3</span>
+                        </td>
+                         <td class="col9">
+                            <span><a href="#">删除</a>&nbsp;<a href="#">编辑</a></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <div class="paginationClass">
+        <div style="float: right;">
+            <div class="pageDiv prefixClass">&lt;</div>
+            <div class="pageDiv pageIndex pageSelected">1</div>
+            <div class="pageDiv pageIndex">2</div>
+            <div class="pageDiv pageIndex">3</div>
+            <div class="pageDiv pageIndex">4</div>
+            <div class="pageDiv pageIndex">5</div>
+            <div class="pageDiv suffixClass">&gt;</div>
+        </div>
+    </div>
+</body>
+
+</html>

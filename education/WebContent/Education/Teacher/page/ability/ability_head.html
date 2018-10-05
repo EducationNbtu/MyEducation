@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../css/ability/ability_detail.css">
+        <link rel="stylesheet" type="text/css" href="../../css/ability/ability_head.css">
+         <script src="../../js/echarts.js"></script>
+        <title>能力评估首页</title>
+        <style type="text/css">
+            html,body{
+                height:100%;
+                padding: 0;
+                width: 100%;
+                margin: 0;
+                font-family: '微软雅黑';
+                background-color: #f6f6f6;
+            }
+        </style>
+    </head>
+<body>
+    <div class="top">
+       <div class="left">
+           <div class="bottom_title">能力评星</div>
+           <div class="head_pic">
+                  <div style="width: 40px;height: 40px;">
+                  <img src="image/head2.png" style="height: 40px;width: 40px;margin-top: 15px;">
+                  </div>
+                  <span style="display: block;position: relative;top: 20px;left: 30px;">亲爱的<span style="font-size: 22px;color: black;">谢少希</span>老师，您目前的分数是： 
+                  <span style="font-size: 22px;font-weight: bold;color: red;">250分</span></span>
+           </div>
+           <div class="success">
+            您目前获得的成就是：<span style="font-size: 22px;color: red;font-weight: bold;">四星教师</span>
+           </div>
+       </div>
+       <div class="mid">
+          <div class="bottom_title">评星规则</div>
+          <div class="rules_list">总分在50以下都是<span class="zhi">初级教师</span>
+          </div>
+          <div class="rules_list">总分在50~100之间是<span class="zhi">1星教师</span></div>
+          <div class="rules_list">总分在100~150之间是<span class="zhi">2星教师</span></div>
+          <div class="rules_list">总分在150~220之间是<span class="zhi">3星教师</span></div>
+          <div class="rules_list">总分220~300之间是<span class="zhi">4星教师</span></div>
+          <div class="rules_list">总分在300~400之间是<span class="zhi">5星教师</span></div>
+       </div>
+       <div class="right" id="main">
+          
+       </div>
+    </div>
+    <div class="bottom">
+            <div class="bottom_title">班级目录</div>
+            <div class="content_list">
+                <div class="content"  onclick="window.open('ability_detail.html','_self')">
+                   <div class="content_picture">
+                      <img src="image/test.png">
+                   </div>
+                   <div class="content_right">
+                      <div class="course_name">c++课程 &nbsp;&nbsp;&nbsp;北仑</div>
+                       <div class="stu_num">学生人数：8人</div>
+                       <div class="time">
+                            <div class="time_top">开始时间：2018-08-29</div>
+                            <div class="time_bottom">预结束时间：2019-12-01</div>
+                       </div>
+                       <div class="score">
+                           得分：<span style="font-size: 25px;color: red;font-weight: bold;">82</span>
+                       </div>
+                       <div class="prent">
+                           <input type="button" id="bb" name="" value="查看详情">
+                       </div>
+                   </div>
+                </div>
+
+                <div class="content">
+                   <div class="content_picture">
+                      <img src="image/test.png">
+                   </div>
+                   <div class="content_right">
+                      <div class="course_name">c++课程 &nbsp;&nbsp;&nbsp;北仑</div>
+                       <div class="stu_num">学生人数：8人</div>
+                       <div class="time">
+                            <div class="time_top">开始时间：2018-08-29</div>
+                            <div class="time_bottom">预结束时间：2019-12-01</div>
+                       </div>
+                       <div class="score">
+                           得分：<span style="font-size: 25px;color: red;font-weight: bold;">82</span>
+                       </div>
+                       <div class="prent">
+                           <input type="button" id="bb" name="" value="查看详情">
+                       </div>
+                   </div>
+                </div>
+
+                <div class="content">
+                   <div class="content_picture">
+                      <img src="image/test.png">
+                   </div>
+                   <div class="content_right">
+                      <div class="course_name">c++课程 &nbsp;&nbsp;&nbsp;北仑</div>
+                       <div class="stu_num">学生人数：8人</div>
+                       <div class="time">
+                            <div class="time_top">开始时间：2018-08-29</div>
+                            <div class="time_bottom">预结束时间：2019-12-01</div>
+                       </div>
+                       <div class="score">
+                           得分：<span style="font-size: 25px;color: red;font-weight: bold;">82</span>
+                       </div>
+                       <div class="prent">
+                           <input type="button" id="bb" name="" value="查看详情">
+                       </div>
+                   </div>
+                </div>
+
+
+
+                <div class="content">
+                   <div class="content_picture">
+                       <img src="image/test.png">
+                   </div>
+                   <div class="content_right">
+                      <div class="course_name">c++课程 &nbsp;&nbsp;&nbsp;北仑</div>
+                       <div class="stu_num">学生人数：8人</div>
+                       <div class="time">
+                            <div class="time_top">开始时间：2018-08-29</div>
+                            <div class="time_bottom">预结束时间：2019-12-01</div>
+                       </div>
+                       <div class="score">
+                           得分：<span style="font-size: 25px;color: red;font-weight: bold;">82</span>
+                       </div>
+                       <div class="prent">
+                           <input type="button" id="bb" name="" value="查看详情">
+                       </div>
+                   </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: '评分排名'
+    },
+    tooltip: {},
+    legend: {
+        data:['测试']
+    },
+    xAxis: {
+        data: ["陈","王","周","姚","竺","李"]
+    },
+    yAxis: {},
+    series: [{
+        name: '总分',
+        type: 'bar',
+          data:[
+              {
+                value:120,
+                itemStyle:{
+                  normal:{color:'#23bbff'}
+              }
+              }, 
+              {
+                value:200,
+                itemStyle:{
+                  normal:{color:'#23bbff'}
+              }
+              }, 
+              {
+                value:150,
+                itemStyle:{
+                  normal:{color:'#23bbff'}
+              }
+              }, 
+              {
+                value:110,
+                itemStyle:{
+                  normal:{color:'#23bbff'}
+              }
+              },
+              {
+                value:120,
+                itemStyle:{
+                  normal:{color:'#23bbff'}
+              }
+              },
+              {
+                value:220,
+                itemStyle:{
+                  normal:{color:'#23bbff'}
+              }
+              },
+
+            ]
+    }]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>

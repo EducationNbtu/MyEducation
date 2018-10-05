@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+		<link rel="stylesheet" href="css/1.css" />
+		<script src="js/jquery.min.js"></script>
+		<script>
+		$(function(){
+			$('#pop').css('left',($(window).width()-$('#pop').width())/2);
+			$('#pop').css('top',($(window).height()-$('#pop').height())/2);
+
+			$('.img-1').click(function(){
+				$('#pop').css('display','block');
+			});
+
+			
+			$('#b1-2').click(function(){
+				$('#pop').css('display','block');
+			});
+			$('.pop_span3').click(function(){
+				$('#pop').css('display','none');
+			})
+		});
+	</script>
+</head>
+<body><div id="div1">
+	
+			<div id="div2">
+				<button class="b1" id="b1-1">批量删除</button>
+				<button class="b1" id="b1-2">添加试卷</button>
+				<div id="div2-1">全部</div>
+				<input type="text" id="input1"  style="background:url(img/4.png);
+	background-repeat: no-repeat;" placeholder="请输入试卷名称检索">
+			</div>
+			<div id="div2-2">
+				<table id="table2">
+					<tr><td><input type="checkbox" name="checkbox"></td></tr>
+					<tr><td><input type="checkbox" name="checkboxcheckbox"></td></tr>
+					<tr><td><input type="checkbox" name="checkbox"></td></tr>
+					<tr><td><input type="checkbox" name="checkbox"></td></tr>
+					<tr><td><input type="checkbox" name="checkbox"></td></tr>
+					<tr><td><input type="checkbox" name="checkbox"></td></tr>
+					<tr><td><input type="checkbox" name="checkbox"></td></tr>
+					<tr><td><input type="checkbox" name="checkbox"></td></tr>
+					<tr><td><input type="checkbox" name="checkbox"></td></tr>
+					<tr><td><input type="checkbox" name="checkbox"></td></tr>
+				</table>
+			</div>
+			<div id="div3">
+				<table id="table1">
+				<tr id="tr1">
+				<td>试卷序号</td><td>编号</td><td>标题</td><td>创建时间</td><td>时间限制</td><td>创建人</td><td>状态</td><td>操作</td>
+				</tr>
+				<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>
+				<img src="img/3.png" class="img-1"><img src="img/5.png" class="img-2"><img src="img/2.png" class="img-3"><img src="img/1.png" class="img-4">
+				</td></tr>
+				<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><img src="img/3.png" class="img-1"><img src="img/5.png" class="img-2"><img src="img/2.png" class="img-3"><img src="img/1.png" class="img-4"></td></tr>
+				<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><img src="img/3.png" class="img-1"><img src="img/5.png" class="img-2"><img src="img/2.png" class="img-3"><img src="img/1.png" class="img-4"></td></tr>
+				<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><img src="img/3.png" class="img-1"><img src="img/5.png" class="img-2"><img src="img/2.png" class="img-3"><img src="img/1.png" class="img-4"></td></tr>
+				<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><img src="img/3.png" class="img-1"><img src="img/5.png" class="img-2"><img src="img/2.png" class="img-3"><img src="img/1.png" class="img-4"></td></tr>
+				<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><img src="img/3.png" class="img-1"><img src="img/5.png" class="img-2"><img src="img/2.png" class="img-3"><img src="img/1.png" class="img-4"></td></tr>
+				<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><img src="img/3.png" class="img-1"><img src="img/5.png" class="img-2"><img src="img/2.png" class="img-3"><img src="img/1.png" class="img-4"></td></tr>
+				<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><img src="img/3.png" class="img-1"><img src="img/5.png" class="img-2"><img src="img/2.png" class="img-3"><img src="img/1.png" class="img-4"></td></tr>
+				<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><img src="img/3.png" class="img-1"><img src="img/5.png" class="img-2"><img src="img/2.png" class="img-3"><img src="img/1.png" class="img-4"></td></tr>
+				</table>
+			</div>
+			<div id="pop">
+		<div class="pop_header">
+			<span class="pop_span1">添加教学计划</span>
+			<span class="pop_span2">-</span>
+			<span class="pop_span3">×</span>
+		</div>
+			<div class="pop-div1">
+				<div class="pop-div-1">标题</div>
+				<input type="text" name="" class="pop-inp1 ">
+			</div>
+			<div class="pop-div1">
+				<div class="pop-div-1">开始时</div>
+				<input type="text" name="" class="pop-inp1 ">
+			</div>
+			<div class="pop-div1">
+				<div class="pop-div-1">结束时</div>
+				<input type="text" name="" class="pop-inp1 ">
+			</div>
+			<div class="pop-div1">
+				<div class="pop-div-1">状态</div>
+				<input type="radio" name="radio" class="pop-rad " value="1"><span class="pop-sp">待审核</span>
+				<input type="radio" name="radio" class="pop-rad " value="2"><span class="pop-sp">正常</span>
+				<input type="radio" name="radio" class="pop-rad " value="3"><span class="pop-sp">停用</span>
+				<input type="radio" name="radio" class="pop-rad " value="4"><span class="pop-sp">删除</span>
+			</div>
+			<div class="pop-div1">
+				<div class="pop-div-2">添加问题</div>
+				<input type="text" name="" class="pop-inp2" placeholder="样例输入：题目号，中间逗号隔开">
+			</div>
+			<div class="pop-div1">
+				<div class="pop-div-1">描述</div>
+				<input type="text" name="" class="pop-inp3 ">
+			</div>
+			<div class="pop-div1">
+				<div class="pop-div-1">特定用</div>
+				<input type="text" name="" class="pop-inp3 ">
+			</div>
+			<div class="pop-div1">
+				<div class="pop-div-1">课程号</div>
+				<input type="text" name="" class="pop-inp1 ">
+			</div>
+			<div class="pop-div2" >
+				<button class="pop-b1">重置</button>
+				<button class="pop-b1">提交</button>
+			</div>
+
+	</div>
+	</div>
+</body>
+</html>

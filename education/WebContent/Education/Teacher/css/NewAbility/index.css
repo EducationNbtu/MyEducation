@@ -1,0 +1,96 @@
+html,body
+{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+.i_left
+{
+	width: calc(68% - 2px);
+	height: calc(150% - 2px);
+	
+}
+.i_right
+{
+	width: calc(30% - 2px);
+	height: calc(150% - 2px);
+	
+	margin-left: calc(1% + 0px);
+}
+.i_left,.i_right
+{
+	float: left;
+}
+.lt
+{
+	width: calc(100% - 2px);
+	height: calc(20% - 2px);
+	
+	box-shadow: 0 0 2px #d1e8ff;
+}
+.lr
+{
+	width: calc(100% - 2px);
+	height: calc(80% - 2px);
+	box-shadow: 0 0 2px #d1e8ff;
+	position: relative;
+	top: calc(2% - 2px);
+}
+.rlist
+{
+	width: calc(100% - 2px);
+	height: calc(30% - 2px);
+	border: 1px solid #eee;
+	margin-bottom: 15px;
+	box-shadow: 0 0 2px #d1e8ff;
+}
+#customers
+  {
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  width:calc(100% + 0px);
+  border-collapse:collapse;
+  
+  }
+  .listtr
+  {
+  	height: 40px;
+  	border-bottom: 1px solid #eee;
+  }
+  .aa
+  {
+  	background-color: #f2f2f2;
+  }
+  .listtr:hover
+  {
+  	background-color: #aad9ff;
+  }
+   .listtr td
+   {
+   	font-size: 12px;
+   }
+   .co1
+   {
+   	width: 5%;
+   }
+   .co2
+   {
+   	width: 35%;
+   }
+   .co3
+   {
+   	width: 35%;
+   }
+   .co4
+   {
+   	width: 10%;
+   }
+   .co5
+   {
+   	width: 10%;
+   }
+   .co6
+   {
+   	width: 5%;
+   }
