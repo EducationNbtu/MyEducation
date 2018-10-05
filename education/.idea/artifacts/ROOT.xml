@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="ROOT">
-    <output-path>D:/18年那些事/第一个项目-edu/项目/项目war包</output-path>
-    <root id="archive" name="ROOT.war">
-      <element id="dir-copy" path="$PROJECT_DIR$/WebContent" />
-    </root>
-  </artifact>
-</component>
