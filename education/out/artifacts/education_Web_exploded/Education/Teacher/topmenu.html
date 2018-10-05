@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>topmanu</title>
+    <link rel="stylesheet" href="css/All.css" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.4.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.4.1.js"></script>
+</head>
+<style>
+	html,body{
+		height: 100px;
+		width: 1920px;
+		margin: 0px;
+        background-color: #f9f9f9;
+      
+	}
+</style>
+<body>
+<div class="navi-bg" style="z-index: 1;">
+	<img src="img/logo.png" alt="logo" class="navi-logo" />
+	<div class="navi-logow">智码科技</div>
+	<div><a class="navi-option navi-optionselected" style="margin-left: 150px;" href="tMainPage.html" target="PageFrame">首&nbsp;&nbsp;页</a></div>
+	<div><a class="navi-option navi-optioncolor" style="margin-left: 50px;" href="tclass.html" target="PageFrame">我的课程</a></div>
+	<div><a class="navi-option navi-optioncolor" style="margin-left: 50px;" href="ttest.html" target="PageFrame">我的测试</a></div>
+	<div><a class="navi-option navi-optioncolor" style="margin-left: 50px;" href="tquestion.html" target="PageFrame">我的题目</a></div>
+	<div><a class="navi-option navi-optioncolor" style="margin-left: 50px;" href="tplan.html" target="PageFrame">教学计划</a></div>
+	<div><a class="navi-option navi-optioncolor" style="margin-left: 50px;" href="tstudent.html" target="PageFrame">我的学生</a></div>
+	<div><a class="navi-option navi-optioncolor" style="margin-left: 50px;" href="tclassroom.html" target="PageFrame">我的课堂</a></div>
+	<img src="img/avatar.png" alt="avatar" class="navi-avatar" id="avatar" />
+</div>
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+	//导航切换
+	$(".navi-option").click(function(){
+		$(".navi-option.navi-optionselected").removeClass("navi-optionselected").addClass("navi-optioncolor");
+		$(this).removeClass("navi-optioncolor");
+		$(this).addClass("navi-optionselected");
+	});
+})
+</script>

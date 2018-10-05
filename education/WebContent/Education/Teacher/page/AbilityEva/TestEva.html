@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试评估</title>
+	<script type="text/javascript" src="../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../js/ability/curse_manage.js"></script>
+    <link rel="stylesheet" href="../../css/AbilityEva/curse_manage.css" />
+    <link rel="stylesheet" href="../../css/jquery-ui.css" />
+</head>
+<style>
+    a{
+        text-decoration:none;
+        text-align: center;
+        color: #40A9ff;
+        display: block;
+    }
+    .col1{
+        width: 10%;
+    }
+    .col2{
+        width: 30%;
+    }
+    .col3{
+        width: 10%;
+    }
+    .col4{
+        width: 15%;
+    }
+    .col5{
+        width: 15%;
+    }
+    .col6{
+        width: 7%;
+    }
+    span{
+        valign:middle;
+        align:center;
+        text-align: center;
+        display: block;
+    }
+</style>
+<body>
+<div class="filterClass">
+    <div class="searchDiv">
+        <img src="../../image/icon-search.png" />
+        <input id="keywordInput" type="text" />
+    </div>
+    <div class="dateDiv">
+        <input type="text" id="dateFrom">至<input type="text" id="dateTo">
+    </div>
+    <input id="searchBtn" class="btnClass" type="button" value="搜索" />
+</div>
+<!--<div class="toolsBar">-->
+<!--<input id="addBtn" class="btnClass" type="button" value="+&nbsp新增" />-->
+<!--</div>-->
+<div class="tableClass">
+    <table class="dataTable" cellspacing="0">
+        <thead>
+        <tr>
+            <th class="col1">
+                <span>测试编号</span>
+            </th>
+            <th class="col2">
+                <span>测试名称</span>
+            </th>
+            <th class="col3">
+                <span>所属知识点</span>
+            </th>
+            <th class="col3">
+                <span>难度</span>
+            </th>
+            <th class="col4">
+                <span>所属课程</span>
+            </th>
+            <th class="col6">
+                <span>分数</span>
+            </th>
+            <th class="col6">
+                <span>排名</span>
+            </th>
+            <th class="col5">
+                <span>详细</span>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="col1">
+                <span>1001</span>
+            </td>
+            <td class="col2">
+                <span>C++阶段性测试1-顺序结构1</span>
+            </td>
+            <td class="col3">
+                <span>顺序结构</span>
+            </td>
+            <td class="col3">
+                <span>☆</span>
+            </td>
+            <td class="col4">
+                <span>C++基础课程</span>
+            </td>
+            <td class="col6">
+                <span>89</span>
+            </td>
+            <td class="col6">
+                <span>1</span>
+            </td>
+            <td class="col5">
+                <a href="javascript:void(0);">&nbsp&nbsp&nbsp详情</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="col1">
+                <span>1002</span>
+            </td>
+            <td class="col2">
+                <span>C++阶段性测试2-分支结构1</span>
+            </td>
+            <td class="col3">
+                <span>分支结构</span>
+            </td>
+            <td class="col3">
+                <span>☆☆</span>
+            </td>
+            <td class="col4">
+                <span>C++基础课程</span>
+            </td>
+            <td class="col6">
+                <span>89</span>
+            </td>
+            <td class="col6">
+                <span>1</span>
+            </td>
+            <td class="col5">
+                <a href="javascript:void(0);">&nbsp&nbsp&nbsp详情</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="col1">
+                <span>1003</span>
+            </td>
+            <td class="col2">
+                <span>C++阶段性测试3-循环结构1</span>
+            </td>
+            <td class="col3">
+                <span>循环结构</span>
+            </td>
+            <td class="col3">
+                <span>☆☆</span>
+            </td>
+            <td class="col4">
+                <span>C++基础课程</span>
+            </td>
+            <td class="col6">
+                <span>89</span>
+            </td>
+            <td class="col6">
+                <span>1</span>
+            </td>
+            <td class="col5">
+                <a href="javascript:void(0);">&nbsp&nbsp&nbsp详情</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="col1">
+                <span>1004</span>
+            </td>
+            <td class="col2">
+                <span>C++阶段性测试4-数组1</span>
+            </td>
+            <td class="col3">
+                <span>数组</span>
+            </td>
+            <td class="col3">
+                <span>☆☆</span>
+            </td>
+            <td class="col4">
+                <span>C++基础课程</span>
+            </td>
+            <td class="col6">
+                <span>89</span>
+            </td>
+            <td class="col6">
+                <span>1</span>
+            </td>
+            <td class="col5">
+                <a href="javascript:void(0);">&nbsp&nbsp&nbsp详情</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="col1">
+                <span>1005</span>
+            </td>
+            <td class="col2">
+                <span>C++阶段性测试5-字符1</span>
+            </td>
+            <td class="col3">
+                <span>字符</span>
+            </td>
+            <td class="col3">
+                <span>☆</span>
+            </td>
+            <td class="col4">
+                <span>C++基础课程</span>
+            </td>
+            <td class="col6">
+                <span>89</span>
+            </td>
+            <td class="col6">
+                <span>1</span>
+            </td>
+            <td class="col5">
+                <a href="javascript:void(0);">&nbsp&nbsp&nbsp详情</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="col1">
+                <span>1006</span>
+            </td>
+            <td class="col2">
+                <span>C++初级算法测试1-排序1</span>
+            </td>
+            <td class="col3">
+                <span>排序</span>
+            </td>
+            <td class="col3">
+                <span>☆☆☆</span>
+            </td>
+            <td class="col4">
+                <span>C++初级算法课程</span>
+            </td>
+            <td class="col6">
+                <span>89</span>
+            </td>
+            <td class="col6">
+                <span>1</span>
+            </td>
+            <td class="col5">
+                <a href="javascript:void(0);">&nbsp&nbsp&nbsp详情</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="paginationClass">
+    <div style="float: right;">
+        <div class="pageDiv prefixClass">&lt;</div>
+        <div class="pageDiv pageIndex pageSelected">1</div>
+        <div class="pageDiv pageIndex">2</div>
+        <div class="pageDiv pageIndex">3</div>
+        <div class="pageDiv pageIndex">4</div>
+        <div class="pageDiv pageIndex">5</div>
+        <div class="pageDiv suffixClass">&gt;</div>
+    </div>
+</div>
+</body>
+</html>

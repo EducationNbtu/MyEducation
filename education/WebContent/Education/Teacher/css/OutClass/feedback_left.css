@@ -1,0 +1,174 @@
+html,body
+{
+	height: 100%;
+	font-family: "微软雅黑";
+	padding: 0;
+	margin: 0;
+}
+.class_message
+{
+	width: calc(100% - 0px);
+	height: calc(20% - 2px);
+	border-bottom: 1px solid #eee;
+	background-color: #f0f2f5;
+}
+.left_title_list
+{
+	width: calc(15% - 2px);
+	height: calc(100% - 2px);
+	display:flex;
+    align-items:center;
+    justify-content:left;
+    font-size: 15px;
+    color: gray;
+
+
+
+}
+.class_message div
+{
+	float: left;
+}
+a
+{
+	text-decoration: none;
+	color: #23bbff;
+}
+.hint_message
+{
+	width: calc(100% - 0px);
+	height: calc(40% - 2px);
+	border-bottom: 1px solid #eee;
+
+}
+.hint_message div
+{
+	float: left;
+}
+.hint_list
+{
+	width: calc(28% - 2px);
+	height: calc(100% - 2px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	font-weight: bold;
+
+}
+.totalclass_message
+{
+	width: 98%;
+	height: calc(100% - 2px);
+	margin: 10px ;
+	border: 1px solid #eeeeee;
+
+	background-color: white;
+}
+.person_list
+{
+	margin-top: 2%;
+}
+.total_class
+{
+	width: calc(100% - 2px);
+	height: calc(10% - 2px);
+	border: 1px solid #eee;
+	border-radius: 3px;
+}
+.data_1
+{
+	width: calc(100% - 2px);
+	height: calc(50% - 2px);
+	position: relative;
+	top:25%;
+}
+.data_1_list
+{
+	width: calc(25% - 2px);
+	height: calc(100% - 2px);
+
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+.data_1 div
+{
+	float: left;
+}
+.person_list
+{
+	width: calc(100% - 2px);
+	height: calc(25% - 2px);
+	border: 1px solid #eee;
+	border-radius: 3px;
+}
+.person_photo
+{
+	width: calc(12% - 2px);
+	height: calc(100% - 2px);
+	border-right: 1px solid #eee;
+}
+.person_right
+{
+	width: calc(88% - 2px);
+	height: calc(100% - 2px);
+
+
+}
+.person_list .person_photo,.person_right
+{
+	float: left;
+}
+.person_top
+{
+	width: calc(100% - 2px);
+	height: calc(33% - 2px);
+
+}
+.person_mid
+{
+	width: calc(100% - 2px);
+	height: calc(33% - 2px);
+
+}
+.person_bottom
+{
+	width: calc(100% - 2px);
+	height: calc(34% - 2px);
+
+}
+.person_small_list
+{
+	width: calc(12% - 2px);
+	height: calc(100% - 2px);
+
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+.person_top div
+{
+	float: left;
+}
+.person_mid div
+{
+	float: left;
+}
+.person_bottom div
+{
+	float: left;
+}
+.person_list:hover
+{
+	background-color: #e9eaec;
+	cursor: pointer;
+}
+.shangbu
+{
+	width: 98%;
+	margin: 10px ;
+	border: 1px solid #eeeeee;
+	height: calc(40% - 2px);
+	background-color: white;
+}

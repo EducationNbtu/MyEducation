@@ -1,0 +1,137 @@
+.body1{
+	width: 450px;
+	height: 600px;
+	background-color:#e4f5ff;
+	margin: auto;
+	border-radius:5px ;
+	display:none;
+}
+.head{
+	width:450px;
+	height:100px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+
+.h1{
+	font-family: 微软雅黑;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	background:  no-repeat 15px center;
+	margin-top: -80px;
+}
+.p{
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	text-align:center;
+	margin-top: 10px;
+}
+
+.TP_title{
+	width: 90px;
+	height: 25px;
+	margin-top: 60px;
+	margin-left:60px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+.TP_content{
+	width: 90px;
+	height: 25px;
+	margin-top: 20px;
+	margin-left:60px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+
+.TP_object{
+	width: 90px;
+	height: 25px;
+	margin-top: 100px;
+	margin-left:60px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+
+.TP_target{
+	width: 90px;
+	height: 25px;
+	margin-top: 20px;
+	margin-left:60px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+
+.TP_teachsche_num{
+	width: 90px;
+	height: 25px;
+	margin-top: 20px;
+	margin-left:60px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+
+.CS_id{
+	width: 90px;
+	height: 25px;
+	margin-top: 20px;
+	margin-left:60px;
+	background-color:#1E90FF;
+	border-radius:5px ;
+}
+
+
+
+.button{
+	width: 60px;
+	height: 25px;
+	margin-top:60px;
+	margin-left:110px;
+	background-color:#FFA500 ;
+	border-radius:5px ;
+	color: white;
+	text-align:center;
+}
+
+.text{
+	height: 25px;
+	margin-top: -25px;
+	margin-left: 190px;
+}
+
+.select0{
+	width: 80px;
+	height: 25px;
+	margin-top: -25px;
+	margin-left: 180px;
+}
+.select1{
+	width: 80px;
+	height: 25px;
+	margin-top: -25px;
+	margin-left: 260px;
+}
+.select2{
+	width: 100px;
+	height: 25px;
+	margin-top: -25px;
+	margin-left: 340px;
+}
+
+
+/* 关闭按钮 */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

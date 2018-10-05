@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>人员管理</title>
+</head>
+<style>
+body{
+	width: 1686px;height: 986px;
+}
+.bot{
+	width:1686px;height: 986px;
+}
+
+.bot .bot-right{
+	width: 1686px;height: 986px;float: left;
+}
+.bot .bot-right input{
+	float: left;margin-left: 30px;margin-top: 20px;
+}
+.bot .bot-right .form .btn1{
+	width: 80px;height: 40px;background-color: rgb(22,155,213);color: white;border:none;border-radius: 10px;margin-left: 5px;float: left;cursor: pointer;position: absolute;top:135px;left:1350px;
+}
+.bot .bot-right .btn3{
+	width: 90px;height: 40px;background-color: rgb(255,51,51);color: white;border:none;border-radius: 10px;text-align: center;cursor: pointer;
+}
+.bot .bot-right .btn4{
+	width: 126px;height: 40px;background-color: rgb(22,155,213);color: white;border:none;border-radius: 10px;text-align: center;margin-left: 60px;cursor: pointer;
+}
+.bot .bot-right select{
+	height:35px;margin-top: 25px;width: 150px;margin-left: 150px;
+}
+.bot .bot-right .form table{
+	width: 1500px;height: 750px;float: right;margin-right: 100px;margin-top: 20px;
+}
+.bot .bot-right .form table tr{
+	height: 30px;
+}
+.bot .bot-right .form table td{
+	height: 30px;
+}
+.bot .bot-right .form img{
+	width: 20px;height: 20px;margin-left: 30px;cursor: pointer;float: left;
+}
+.bot .bot-right .tab-head{
+	color: white;text-align: center;background-color:rgb(78,132,254);height: 80px 
+}
+.bot .bot-right .form input{
+	float: right;margin-right: 10px;width: 20px;height: 20px;margin-top: 60px;
+}
+.add{
+	height: 480px;width: 600px;border: 1px solid grey;border-radius: 10px;position: absolute;top:50px;left: 600px;display: none;z-index: 2;background-color: white;box-shadow: 0 0 15px black;
+}
+.add .add-head{
+	width: 600px;height: 60px;border: 1px solid grey;border-radius: 10px;background-color:rgb(78,132,254);
+}
+.add .add-head .add-text{
+	color: white;font-size: 24px;margin-top:10px;margin-left: 30px;
+}
+.add .add-head .suoxiao{
+	color: white;font-size: 34px;float: right;font-weight: bold;margin-right: 40px;margin-top: 5px;cursor:pointer;
+}
+.add .add-head .close{
+	color: red;font-size: 34px;float: right;font-weight: bold;margin-right: 30px;margin-top: 5px;
+	cursor:pointer;
+}
+.add .add-left{
+	width:150px;height: 740px;float: left;
+}
+.add .add-left input{
+	height: 40px;background-color: rgb(22,155,213);color: white;border:none;border-radius: 8px;text-align: center;float: right;clear: both;
+}
+.add .add-right{
+	float: left;width: 450px;height: 500px;
+}
+.add .add-right input{
+	float: left;clear: both;margin-left: 20px;
+}
+.add .add-right .a{
+	width: 250px;height: 100px;
+}
+.add .add-right form{
+	float: left;width: 500px;height: 40px;margin-top: 50px;
+}
+.add .add-right form label{
+	float: left;
+}
+.add .add-right	.bot-btn1{
+	height: 40px;background-color: rgb(247,152,28);color: white;border:none;border-radius: 8px;text-align: center;position: absolute;top:350px;left: 180px;width: 60px;
+}
+.add .add-right	.bot-btn2{
+	height: 40px;background-color: rgb(247,152,28);color: white;border:none;border-radius: 8px;text-align: center;position: absolute;top:350px;left: 360px;width: 60px;
+}
+.marsk-container{background:#000000;filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5; width:100%; height:1686px; position:absolute; top:0; left:0; z-index:1; display:none; }
+</style>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+    
+	$('.pic11').click(function(){
+		$('.add').show(1000);
+		$(".marsk-container").show();
+		event.preventDefault();
+	});
+		});
+		$(document).ready(function(){
+	$('.btn4').click(function(){
+		$('.add').show(500);
+		$(".marsk-container").show();
+		event.preventDefault();
+	});		
+		});
+	$(document).ready(function(){
+    
+	$('.close').click(function(){
+		$('.add').hide(200);
+		$(".marsk-container").hide();
+		event.preventDefault();
+	});
+
+		});
+	$ (function ()
+    {
+        $(".bot-btn1").click(function() {
+        $(".a").val("");
+        $(".b").val("");
+    });
+    })
+</script>
+<body><div class="marsk-container"></div>
+	<div class="add">
+		<div class="add-head">
+			<span class="add-text">添加用户</span>
+			<span class="close">×</span>
+			<span class="suoxiao">-</span>
+		</div>
+		<div class="add-bot">
+			<div class="add-left">
+				<input type="button" value="姓名" style="margin-top: 30px"></input>
+				<input type="button" value="用户名（账号）" style="margin-top: 20px"></input>
+				<input type="button" value="密码" style="margin-top: 20px"></input>
+				<input type="button" value="状态" style="margin-top: 20px"></input>
+			</div>
+			<div class="add-right">
+				<input type="text" class="b" style="margin-top: 40px"></input>
+				<input type="text" class="b" style="margin-top: 37px;"></input>
+				<input type="text" class="b" style="margin-top: 39px"></input>
+				<input type="text" class="b" style="margin-top: 39px"></input>
+				<input class="bot-btn1" type="button" value="重置" style="margin-top: 20px"></input>
+				<input class="bot-btn2" type="button" value="提交" style="margin-top: 20px"></input>
+			</div>
+		</div>
+	</div>
+	<div class="all">
+		<div class="bot">
+			<div class="bot-right">
+				<div class="head2">
+					<input class="btn3" type="button" value="批量删除"></input>
+					<input class="btn4" type="button" value="添加用户"></input>
+					<select class="bot-select">
+						<option value ="课程实施1">课程实施1</option>
+						<option value ="课程实施2">课程实施2</option>
+						<option value ="课程实施3">课程实施3</option>
+						<option value ="课程实施4">课程实施4</option>
+					</select>
+					<span>按课程实施分类</span>
+				</div>
+				<div class="form">
+					<table border="1" cellspacing="0">
+						<tr class="tab-head">
+							<td>序号</td>
+							<td>姓名</td>
+							<td>用户名</td>
+							<td>密码</td>
+							<td>联系电话</td>
+							<td>创建时间</td>
+							<td>权限</td>
+							<td>人员状态</td>
+							<td>课程实施号</td>
+							<td style="width: 250px;">操作</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td style="padding-left: 100px;">
+								<input class="btn1" type="button" value="详情"></input>
+								<img src="备用图标/删.png" alt="pic3" />
+								<img src="备用图标/改.png" alt="pic4" />
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					<input type="checkbox"></input>
+					<input type="checkbox"></input>
+					<input type="checkbox"></input>
+					<input type="checkbox"></input>
+					<input type="checkbox"></input>
+					<input type="checkbox"></input>
+					<input type="checkbox"></input>
+					<input type="checkbox"></input>
+					<input type="checkbox"></input>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

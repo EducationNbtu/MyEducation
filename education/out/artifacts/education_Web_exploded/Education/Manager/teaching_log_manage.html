@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>教学日志管理</title>
+</head>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<style>
+	#background{width: 1686px;height: 986px;}
+	#background button{cursor: pointer;}
+	#long{height: 60px;width: 1200px;position: relative;top: 60px;left: 60px;}
+	#long button{height: 50px;border-radius:16px;position: relative;font-size: 25px;color: white;border: none;float: left;}
+	#butn1{background: red;width: 150px;}
+	#butn2{background: #1E90FF;width: 128px;left: 150px;}
+	#long input{height: 45px;width: 330px;background:url(备用图标/搜索.png) no-repeat 328px 0;padding-right: 45px;font-size: 25px;background-size: 47px;}
+	#find{height: 50px;width: 330px;position: relative;float: left;left: 150px;background: white;}
+
+	#background tr{height: 46px;}
+	#table1{width: 30px;position: relative;top: 90px;float: left;border-collapse:collapse;}
+	#table1 input{width: 25px;height: 25px;}
+	#table2{border-collapse:collapse;width: 1653px;height: ;position: relative;top: 90px;float: left;border-color: #A6A6A6;color: white;font-size: 15px;}
+	#table2 img{width: 35px;height: 35px;cursor: pointer;}
+	#table2 tr:nth-child(1){background: #1E90FF;}
+	.t1{width: 50px;}
+	.t2{width: 50px;}
+	.t3{width: 48px;}
+	.t4{width: 174px;}
+	.t5{width: 174px;}
+	.t6{width: 126px;}
+	.t7{width: 188px;}
+	.t8{width: 100px;}
+	.t9{width: 152px;}
+	.t10{width: 100px;}
+	.t11{width: 100px;}
+	.t12{width: 176px;}
+	.t13{width: 194px;}
+</style>
+<body>
+	<div id="background">
+		<div id="long">
+			<button id="butn1"><b>批量删改</b></button>
+			<button id="butn2"><b>全部</b></button>
+			<div id="find"><input type="text" placeholder="按教学安排安排名检索" /></div>
+		</div>
+		<table id="table1">
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+			<tr><th><input type="checkbox" /></th></tr>
+		</table>
+		<table id="table2" border="1">
+					<tr>
+						<th class="t1">序号</th>
+						<th class="t2">编号</th>
+						<th class="t3">标题</th>
+						<th class="t4">所属教学安排号</th>
+						<th class="t5">总时长（课长）</th>
+						<th class="t6">学生签到表</th>
+						<th class="t7">老师&助教签到表</th>
+						<th class="t8">做题记录</th>
+						<th class="t9">学生提问列表</th>  
+						<th class="t10">开始时间</th>
+						<th class="t11">结束时间</th>
+						<th class="t12">所属课程实施号</th>
+						<th class="t13">操作</th>
+					</tr>
+					<tr>
+						<th class="t1"></th>
+						<th class="t2"></th>
+						<th class="t3"></th>
+						<th class="t4"></th>
+						<th class="t5"></th>
+						<th class="t6"><a href="">链接</a></th>
+						<th class="t7"><a href="">链接</a></th>
+						<th class="t8"><a href="">链接</a></th>
+						<th class="t9"><a href="">链接</a></th>  
+						<th class="t10"></th>
+						<th class="t11"></th>
+						<th class="t12"></th>
+						<th class="t13">
+							<img src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th> 
+					</tr>
+					<tr>
+						<th class="t1"></th>
+						<th class="t2"></th>
+						<th class="t3"></th>
+						<th class="t4"></th>
+						<th class="t5"></th>
+						<th class="t6"></th>
+						<th class="t7"></th>
+						<th class="t8"></th>
+						<th class="t9"></th>  
+						<th class="t10"></th>
+						<th class="t11"></th>
+						<th class="t12"></th>
+						<th class="t13">
+							<img src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th> </tr>
+					<tr>
+						<th class="t1"></th>
+						<th class="t2"></th>
+						<th class="t3"></th>
+						<th class="t4"></th>
+						<th class="t5"></th>
+						<th class="t6"></th>
+						<th class="t7"></th>
+						<th class="t8"></th>
+						<th class="t9"></th>  
+						<th class="t10"></th>
+						<th class="t11"></th>
+						<th class="t12"></th>
+						<th class="t13">
+							<img src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th> </tr>
+					<tr>
+						<th class="t1"></th>
+						<th class="t2"></th>
+						<th class="t3"></th>
+						<th class="t4"></th>
+						<th class="t5"></th>
+						<th class="t6"></th>
+						<th class="t7"></th>
+						<th class="t8"></th>
+						<th class="t9"></th>  
+						<th class="t10"></th>
+						<th class="t11"></th>
+						<th class="t12"></th>
+						<th class="t13">
+							<img src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th> </tr>
+					<tr>
+						<th class="t1"></th>
+						<th class="t2"></th>
+						<th class="t3"></th>
+						<th class="t4"></th>
+						<th class="t5"></th>
+						<th class="t6"></th>
+						<th class="t7"></th>
+						<th class="t8"></th>
+						<th class="t9"></th>  
+						<th class="t10"></th>
+						<th class="t11"></th>
+						<th class="t12"></th>
+						<th class="t13">
+							<img src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th> </tr>
+					<tr>
+						<th class="t1"></th>
+						<th class="t2"></th>
+						<th class="t3"></th>
+						<th class="t4"></th>
+						<th class="t5"></th>
+						<th class="t6"></th>
+						<th class="t7"></th>
+						<th class="t8"></th>
+						<th class="t9"></th>  
+						<th class="t10"></th>
+						<th class="t11"></th>
+						<th class="t12"></th>
+						<th class="t13">
+							<img src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th> </tr>
+					<tr>
+						<th class="t1"></th>
+						<th class="t2"></th>
+						<th class="t3"></th>
+						<th class="t4"></th>
+						<th class="t5"></th>
+						<th class="t6"></th>
+						<th class="t7"></th>
+						<th class="t8"></th>
+						<th class="t9"></th>  
+						<th class="t10"></th>
+						<th class="t11"></th>
+						<th class="t12"></th>
+						<th class="t13">
+							<img src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th> </tr>
+					<tr>
+						<th class="t1"></th>
+						<th class="t2"></th>
+						<th class="t3"></th>
+						<th class="t4"></th>
+						<th class="t5"></th>
+						<th class="t6"></th>
+						<th class="t7"></th>
+						<th class="t8"></th>
+						<th class="t9"></th>  
+						<th class="t10"></th>
+						<th class="t11"></th>
+						<th class="t12"></th>
+						<th class="t13">
+							<img src="image/add.png" alt="" />
+							<img src="image/delete.png" alt="" />
+							<img src="image/find.png" alt="" />
+							<img src="image/update.png" alt="" />
+						</th> </tr>
+		</table>
+	</div>
+</body>
+</html>

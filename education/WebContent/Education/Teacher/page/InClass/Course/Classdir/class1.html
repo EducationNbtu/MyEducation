@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C++基础语法第7课</title>
+    <link rel="icon" href="data:;base64,=">
+    <link rel="stylesheet" href="../../../../css/page/StuClass/student_Inclass.css">
+    <script src="../../../../js/jquery.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+    <script src="../../../../js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../../../../css/jquery-ui.css">
+   	<script>
+  		window.onload=function(){
+
+  		var up=document.getElementById('up');
+  		var edit=document.getElementById('edit');
+  		var span=document.getElementById('hu_close');
+  		edit.onclick=function(){
+  			up.style.display="block";
+  		}
+  		span.onclick = function() {
+    		up.style.display = "none";
+  		}
+  		document.getElementById('kn_close').onclick=function close_kn(){
+    		document.getElementById('knu').style.display="none";
+  		}
+ 	}
+  	</script>
+  <!--<script>
+  $(function() {
+    $( "#datepicker" ).datepicker({
+      showButtonPanel: true
+    });
+  });
+  $(function() {
+    $( "#datepicker1" ).datepicker({
+      showButtonPanel: true
+    });
+  });
+  function getTime(){
+    var d=new Date();
+    return d.getFullYear() + ":" + d.getMonth() + ":" + d.getDate() + ":" + d.getHours() + ":" + d.getMinutes();
+}
+  </script>-->
+
+
+</head>
+<body>
+<div class="bao">
+
+    <div class="title-bg" style="top: 20px;width: 70%; left: 20px;">
+        <p class="title-info" style="top: 10px;left: 45%;">循环的嵌套</p>
+        <p class="title-info" style="top: 40px;left: 25px;">内容：循环结构（一）</p>
+        <p class="title-info" style="top: 65px;left: 25px;">目标：掌握for循环的写法和简单应用</p>
+        <p class="title-info" style="top: 90px;left: 25px;">课时：120分钟</p>
+        <p class="title-info" style="top: 90px;left: 200px;">课次：7</p>
+        <p class="title-info" style="top: 90px;left: 300px;">开始时间：2018-08-22&nbsp08:00</p>
+        <p class="title-info" style="top: 90px;left: 600px;">结束时间：2018-08-22&nbsp10:00</p>
+    </div>
+
+   
+    
+   
+<!--shdjsdjsshfhdsfhshjf-->
+
+
+
+    <a style="display: block;position: absolute;top: 23%;left: 65%;font-size: 20px;display: none;"  href="#">签到表</a>
+<div class="daohang" style="display: none;">
+   
+</div>
+    <input type="button" name="" id="open" value="试卷列表" class="testlist" style="display: none;">
+
+    <div class="examination" id="exam">
+        <div class="examination_title">
+          <div class="et_left">列表</div>
+          <div class="et_right"><span id="close">关闭</span> </div>
+        </div>
+        <div class="et_list">
+          <div class="et_list_left">1001:</div>
+          <div class="et_list_mid">三重循环</div>
+          <div class="et_list_right"><span style="font-weight: bold;">用作：</span> <span class="opts demo">入门</span>&nbsp;&nbsp;
+          <span class="opts">出门</span>&nbsp;&nbsp;
+          <span class="opts">讲解</span>&nbsp;&nbsp;
+          <span class="opts">课后</span></div>
+        </div>
+        <!---->
+        <div class="et_list">
+          <div class="et_list_left">1001:</div>
+          <div class="et_list_mid">三重循环</div>
+          <div class="et_list_right"><span style="font-weight: bold;">用作：</span> <span class="opts demo">入门</span>&nbsp;&nbsp;
+          <span class="opts">出门</span>&nbsp;&nbsp;
+          <span class="opts">讲解</span>&nbsp;&nbsp;
+          <span class="opts">课后</span></div>
+        </div>
+        <!---->
+         <!---->
+        <div class="et_list">
+          <div class="et_list_left">1001:</div>
+          <div class="et_list_mid">三重循环</div>
+          <div class="et_list_right"><span style="font-weight: bold;">用作：</span> <span class="opts demo">入门</span>&nbsp;&nbsp;
+          <span class="opts">出门</span>&nbsp;&nbsp;
+          <span class="opts">讲解</span>&nbsp;&nbsp;
+          <span class="opts">课后</span></div>
+        </div>
+        <!---->
+         <!---->
+        <div class="et_list">
+          <div class="et_list_left">1001:</div>
+          <div class="et_list_mid">三重循环</div>
+          <div class="et_list_right"><span style="font-weight: bold;">用作：</span> <span class="opts demo">入门</span>&nbsp;&nbsp;
+          <span class="opts">出门</span>&nbsp;&nbsp;
+          <span class="opts">讲解</span>&nbsp;&nbsp;
+          <span class="opts">课后</span></div>
+        </div>
+        <!---->
+
+         <!---->
+        <div class="et_list">
+          <div class="et_list_left">1001:</div>
+          <div class="et_list_mid">三重循环</div>
+          <div class="et_list_right"><span style="font-weight: bold;">用作：</span> <span class="opts demo">入门</span>&nbsp;&nbsp;
+          <span class="opts">出门</span>&nbsp;&nbsp;
+          <span class="opts">讲解</span>&nbsp;&nbsp;
+          <span class="opts">课后</span></div>
+        </div>
+        <!---->
+         <!---->
+        <div class="et_list">
+          <div class="et_list_left">1001:</div>
+          <div class="et_list_mid">三重循环</div>
+          <div class="et_list_right"><span style="font-weight: bold;">用作：</span> <span class="opts demo">入门</span>&nbsp;&nbsp;
+          <span class="opts">出门</span>&nbsp;&nbsp;
+          <span class="opts">讲解</span>&nbsp;&nbsp;
+          <span class="opts">课后</span></div>
+        </div>
+        <!---->
+         <!---->
+        <div class="et_list">
+          <div class="et_list_left">1001:</div>
+          <div class="et_list_mid">三重循环</div>
+          <div class="et_list_right"><span style="font-weight: bold;">用作：</span> <span class="opts demo">入门</span>&nbsp;&nbsp;
+          <span class="opts">出门</span>&nbsp;&nbsp;
+          <span class="opts">讲解</span>&nbsp;&nbsp;
+          <span class="opts">课后</span></div>
+        </div>
+        <!---->
+    </div>
+    <!--shdjsdjsshfhdsfhshjf-->
+
+   <div class="rank" id="rank" style="display: none;">
+       <div class="rank_title">
+           <div class="rt_left" style="width: calc(92% - 7px);padding-left: 5px">排名<span style="font-size: 12px;font-weight: normal;">（入门测：三重循环）</span></div>
+           <div class="rt_right" style="width: calc(8% - 2px)"><span id="cl" onclick="cl()">关闭</span></div>
+       </div>
+       <div class="rank_content">
+          <table id="customers" align="center">
+             <tr align="center" height="40px" bgcolor="#fff" style="font-size: 20px;">
+               <th colspan="6"  style="border: 1px solid #eee;" width="50%">学生信息</th>
+               <th style="border: 1px solid #eee;" colspan="3">题目</th>
+             </tr>
+             <tr class="r_d_list" height="35px" align="center">
+               <td >排名</td>
+               <td>帐号</td>
+               <td>用户名</td>
+               <td>已解决</td>
+               <td>总时长</td>
+               <td>得分</td>
+               <td align="center">A</td>
+               <td align="center">B</td>
+               <td align="center">C</td>
+             </tr>
+             <tr class="r_d_list" height="35px" align="center">
+               <td >1</td>
+               <td><a>16401010213</a> </td>
+               <td><a href="#">诸葛亮</a> </td>
+               <td><a href="#">2</a> </td>
+               <td>19:00</td>
+               <td>5</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+               <td style="background-color: #aaaaff">00:06:05</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+             </tr>
+               <tr class="r_d_list" height="35px" align="center" bgcolor="#f6f6f6">
+               <td >2</td>
+               <td><a>16401010213</a> </td>
+               <td><a href="#">诸葛亮</a> </td>
+               <td><a href="#">2</a> </td>
+               <td>19:00</td>
+               <td>5</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+               <td style="background-color: #aaaaff">00:06:05</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+             </tr>
+              <tr class="r_d_list" height="35px" align="center">
+               <td >3</td>
+               <td><a>16401010213</a> </td>
+               <td><a href="#">诸葛亮</a> </td>
+               <td><a href="#">2</a> </td>
+               <td>19:00</td>
+               <td>5</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+               <td style="background-color: #aaaaff">00:06:05</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+             </tr>
+              <tr class="r_d_list" height="35px" align="center" bgcolor="#f6f6f6">
+               <td >4</td>
+               <td><a>16401010213</a> </td>
+               <td><a href="#">诸葛亮</a> </td>
+               <td><a href="#">2</a> </td>
+               <td>19:00</td>
+               <td>5</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+               <td style="background-color: #aaaaff">00:06:05</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+             </tr>
+             <tr class="r_d_list" height="35px" align="center">
+               <td >5</td>
+               <td><a>16401010213</a> </td>
+               <td><a href="#">诸葛亮</a> </td>
+               <td><a href="#">2</a> </td>
+               <td>19:00</td>
+               <td>5</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+               <td style="background-color: #aaaaff">00:06:05</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+             </tr>
+              <tr class="r_d_list" height="35px" align="center" bgcolor="#f6f6f6">
+               <td >6</td>
+               <td><a>16401010213</a> </td>
+               <td><a href="#">诸葛亮</a> </td>
+               <td><a href="#">2</a> </td>
+               <td>19:00</td>
+               <td>5</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+               <td style="background-color: #aaaaff">00:06:05</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+             </tr>
+          </table>
+       </div>
+
+   </div>
+
+
+
+
+
+   <!------sdsdsfhsjhfj-->
+   <div class="content">
+   <div class="arrive_at"><a href="#">签到表</a> </div>
+    
+
+
+    
+    <div class="newtitle-bg" style="background-color: #ffffff;left: 20px;" >
+         <div class="ntb_list" style="width: calc(8% - 2px);font-size: 20px;font-weight: bold;justify-content: center; align-items: center;display: flex;color: #607ae3">已结束</div>
+         <div class="ntb_list" style="width: calc(15% - 2px);color: blue;justify-content: center; align-items: center;display: flex;cursor: pointer;" onclick=openuptp();>三重循环(测试)</div>
+         <div class="ntb_list" style="width: calc(17% - 2px);font-size: 12px;justify-content: center;align-items: center;display: flex;">掌握三重循环的概念</div>
+         <div class="ntb_list" style="width: calc(20% - 2px);">
+            <div class="ntbl_list" style="margin-top: 10px;">开始时间：2018-02-18</div>
+            <div class="ntbl_list">结束时间：2018-02-18</div>
+            <div class="ntbl_list">计划时间：15minutes</div>
+            <div class="ntbl_list">实际用时：15minutes</div>
+
+
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px)">
+            <div class="ntbll_list" style="margin-top: 10px">最高分：<span style="color: red;"> 10</span></div>
+            <div class="ntbll_list">平均分：<span style="color: red;"> 7</span></div>
+            <div class="ntbll_list">最低分：<span style="color: red;"> 5</span></div>
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px);display: flex;align-items: center;justify-content: center;font-size: 12px;"><span style="color: red">4道题</span><span style="color: red">（入门）</span></div>
+         <div class="ntb_list" style="width: calc(20% - 2px)">
+                  <div class="ntbll_top">
+                    <input type="button" name="" value="开始" class="start">
+                    <div class="tt"><a href="#"  class="shua">刷新</a></div>
+                    
+                  </div>
+                  <div class="ntbll_bottom">
+
+                        <div class="nbtlb_list" style="width: calc(40% - 2px)"><a href="#" id="edit">edit</a></div>
+                         <div class="nbtlb_list" style="width: calc(60% - 2px)">我的排名：<span>2</span></div>
+                  </div>
+         </div>
+  
+
+    </div>
+
+    <!--测试-->
+    <div class="newtitle-bg" style="background-color: #ffffff;left: 20px;" onclick=openup();>
+         <div class="ntb_list" style="width: calc(8% - 2px);font-size: 20px;font-weight: bold;justify-content: center; align-items: center;display: flex;color: #cfe3fa">未开始</div>
+         <div class="ntb_list" style="width: calc(10% - 2px);color: #2ebbff;justify-content: center; align-items: center;display: flex;">三重循环</div>
+         <div class="ntb_list" style="width: calc(22% - 2px);font-size: 12px;justify-content: center;align-items: center;display: flex;">掌握三重循环的概念</div>
+         <div class="ntb_list" style="width: calc(20% - 2px);">
+            <div class="ntbl_list" style="margin-top: 10px;">开始时间：2018-02-18</div>
+            <div class="ntbl_list">结束时间：2018-02-18</div>
+            <div class="ntbl_list">计划时间：15minutes</div>
+            <div class="ntbl_list">实际用时：15minutes</div>
+
+
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px)">
+            <div class="ntbll_list" style="margin-top: 10px">最高分：<span style="color: red;"> 4</span></div>
+            <div class="ntbll_list">平均分：<span style="color: red;"> 2.5</span></div>
+            <div class="ntbll_list">最低分：<span style="color: red;"> 2</span></div>
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px);display: flex;align-items: center;justify-content: center;font-size: 12px;"><span style="color: red"></span><span style="color: red"></span></div>
+         <div class="ntb_list" style="width: calc(20% - 2px)">
+                  <div class="ntbll_top">
+                    <input type="button" name="" value="开始" class="start" style="display: none;">
+                    <div class="tt"><a href="#" >刷新</a></div>
+                    
+                  </div>
+                  <div class="ntbll_bottom">
+
+                        <div class="nbtlb_list" style="width: calc(40% - 2px)"><a href="#">edit</a></div>
+                         <div class="nbtlb_list" style="width: calc(60% - 2px)">我的排名：<span>2</span></div>
+                  </div>
+         </div>
+  
+
+    </div>
+    <!--测试-->
+
+    <!--练习-->
+      <div class="newtitle-bg" style="background-color: #ffffff;left: 20px;">
+         <div class="ntb_list" style="width: calc(8% - 2px);font-size: 20px;font-weight: bold;justify-content: center; align-items: center;display: flex;color: #cfe3fa">未开始</div>
+         <div class="ntb_list" style="width: calc(15% - 2px);color: blue;justify-content: center; align-items: center;display: flex;">三重循环(练习)</div>
+         <div class="ntb_list" style="width: calc(17% - 2px);font-size: 12px;justify-content: center;align-items: center;display: flex;">掌握三重循环的概念</div>
+         <div class="ntb_list" style="width: calc(20% - 2px);">
+            <div class="ntbl_list" style="margin-top: 10px;">开始时间：2018-02-18</div>
+            <div class="ntbl_list">结束时间：2018-02-18</div>
+            <div class="ntbl_list">计划时间：15minutes</div>
+            <div class="ntbl_list">实际用时：15minutes</div>
+
+
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px)">
+            <div class="ntbll_list" style="margin-top: 10px">最高分：<span style="color: red;"> 10</span></div>
+            <div class="ntbll_list">平均分：<span style="color: red;"> 7</span></div>
+            <div class="ntbll_list">最低分：<span style="color: red;"> 5</span></div>
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px);display: flex;align-items: center;justify-content: center;font-size: 12px;"><span style="color: red">4道题</span><span style="color: red">（入门）</span></div>
+         <div class="ntb_list" style="width: calc(20% - 2px)">
+                  <div class="ntbll_top">
+                    <input type="button" name="" value="开始" class="start">
+                    <div class="tt"><a href="#" >刷新</a></div>
+                    
+                  </div>
+                  <div class="ntbll_bottom">
+
+                        <div class="nbtlb_list" style="width: calc(40% - 2px)"><a href="#">edit</a></div>
+                         <div class="nbtlb_list" style="width: calc(60% - 2px)">我的排名：<span>2</span></div>
+                  </div>
+         </div>
+  
+
+    </div>
+    <!--练习-->
+
+    <!--测试-->
+    <div class="newtitle-bg" style="background-color: #ffffff;left: 20px;">
+         <div class="ntb_list" style="width: calc(8% - 2px);font-size: 20px;font-weight: bold;justify-content: center; align-items: center;display: flex;color: #cfe3fa">未开始</div>
+         <div class="ntb_list" style="width: calc(10% - 2px);color: #2ebbff;justify-content: center; align-items: center;display: flex;">三重循环</div>
+         <div class="ntb_list" style="width: calc(22% - 2px);font-size: 12px;justify-content: center;align-items: center;display: flex;">掌握三重循环的概念</div>
+         <div class="ntb_list" style="width: calc(20% - 2px);">
+            <div class="ntbl_list" style="margin-top: 10px;">开始时间：2018-02-18</div>
+            <div class="ntbl_list">结束时间：2018-02-18</div>
+            <div class="ntbl_list">计划时间：15minutes</div>
+            <div class="ntbl_list">实际用时：15minutes</div>
+
+
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px)">
+            <div class="ntbll_list" style="margin-top: 10px">最高分：<span style="color: red;"> 4</span></div>
+            <div class="ntbll_list">平均分：<span style="color: red;"> 2.5</span></div>
+            <div class="ntbll_list">最低分：<span style="color: red;"> 2</span></div>
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px);display: flex;align-items: center;justify-content: center;font-size: 12px;"><span style="color: red"></span><span style="color: red"></span></div>
+         <div class="ntb_list" style="width: calc(20% - 2px)">
+                  <div class="ntbll_top">
+                    <input type="button" name="" value="开始" class="start">
+                    <div class="tt"><a href="#" >刷新</a></div>
+                    
+                  </div>
+                  <div class="ntbll_bottom">
+
+                        <div class="nbtlb_list" style="width: calc(40% - 2px)"><a href="#">edit</a></div>
+                         <div class="nbtlb_list" style="width: calc(60% - 2px)">我的排名：<span>2</span></div>
+                  </div>
+         </div>
+  
+
+    </div>
+    <!--测试-->
+
+    <!--练习-->
+      <div class="newtitle-bg" style="background-color: #ffffff;left: 20px;">
+         <div class="ntb_list" style="width: calc(8% - 2px);font-size: 20px;font-weight: bold;justify-content: center; align-items: center;display: flex;color: #cfe3fa">未开始</div>
+         <div class="ntb_list" style="width: calc(15% - 2px);color: blue;justify-content: center; align-items: center;display: flex;">三重循环(练习)</div>
+         <div class="ntb_list" style="width: calc(17% - 2px);font-size: 12px;justify-content: center;align-items: center;display: flex;">掌握三重循环的概念</div>
+         <div class="ntb_list" style="width: calc(20% - 2px);">
+            <div class="ntbl_list" style="margin-top: 10px;">开始时间：2018-02-18</div>
+            <div class="ntbl_list">结束时间：2018-02-18</div>
+            <div class="ntbl_list">计划时间：15minutes</div>
+            <div class="ntbl_list">实际用时：15minutes</div>
+
+
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px)">
+            <div class="ntbll_list" style="margin-top: 10px">最高分：<span style="color: red;"> 10</span></div>
+            <div class="ntbll_list">平均分：<span style="color: red;"> 7</span></div>
+            <div class="ntbll_list">最低分：<span style="color: red;"> 5</span></div>
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px);display: flex;align-items: center;justify-content: center;font-size: 12px;"><span style="color: red">4道题</span><span style="color: red">（入门）</span></div>
+         <div class="ntb_list" style="width: calc(20% - 2px)">
+                  <div class="ntbll_top">
+                    <input type="button" name="" value="开始" class="start">
+                    <div class="tt"><a href="#" >刷新</a></div>
+                    
+                  </div>
+                  <div class="ntbll_bottom">
+
+                        <div class="nbtlb_list" style="width: calc(40% - 2px)"><a href="#">edit</a></div>
+                         <div class="nbtlb_list" style="width: calc(60% - 2px)">我的排名：<span>2</span></div>
+                  </div>
+         </div>
+  
+
+    </div>
+    <!--练习-->
+
+
+    <!--测试-->
+    <div class="newtitle-bg" style="background-color: #ffffff;left: 20px;">
+         <div class="ntb_list" style="width: calc(8% - 2px);font-size: 20px;font-weight: bold;justify-content: center; align-items: center;display: flex;color: #5eb95e">进行中</div>
+         <div class="ntb_list" style="width: calc(10% - 2px);color: #2ebbff;justify-content: center; align-items: center;display: flex;">三重循环</div>
+         <div class="ntb_list" style="width: calc(22% - 2px);font-size: 12px;justify-content: center;align-items: center;display: flex;">掌握三重循环的概念</div>
+         <div class="ntb_list" style="width: calc(20% - 2px);">
+            <div class="ntbl_list" style="margin-top: 10px;">开始时间：2018-02-18</div>
+            <div class="ntbl_list">结束时间：2018-02-18</div>
+            <div class="ntbl_list">计划时间：15minutes</div>
+            <div class="ntbl_list">实际用时：15minutes</div>
+
+
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px)">
+            <div class="ntbll_list" style="margin-top: 10px">最高分：<span style="color: red;"> 4</span></div>
+            <div class="ntbll_list">平均分：<span style="color: red;"> 2.5</span></div>
+            <div class="ntbll_list">最低分：<span style="color: red;"> 2</span></div>
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px);display: flex;align-items: center;justify-content: center;font-size: 12px;"><span style="color: red"></span><span style="color: red"></span></div>
+         <div class="ntb_list" style="width: calc(20% - 2px)">
+                  <div class="ntbll_top">
+                    <input type="button" name="" value="开始" class="start">
+                    <div class="tt"><a href="#" >刷新</a></div>
+                    
+                  </div>
+                  <div class="ntbll_bottom">
+
+                        <div class="nbtlb_list" style="width: calc(40% - 2px)"><a href="#">edit</a></div>
+                         <div class="nbtlb_list" style="width: calc(60% - 2px)">我的排名：<span>2</span></div>
+                  </div>
+         </div>
+  
+
+    </div>
+    <!--测试-->
+
+    <!--练习-->
+      <div class="newtitle-bg" style="background-color: #ffffff;left: 20px;">
+         <div class="ntb_list" style="width: calc(8% - 2px);font-size: 20px;font-weight: bold;justify-content: center; align-items: center;display: flex;color: #cfe3fa">未开始</div>
+         <div class="ntb_list" style="width: calc(15% - 2px);color: blue;justify-content: center; align-items: center;display: flex;">四重循环(测试)</div>
+         <div class="ntb_list" style="width: calc(17% - 2px);font-size: 12px;justify-content: center;align-items: center;display: flex;">掌握三重循环的概念</div>
+         <div class="ntb_list" style="width: calc(20% - 2px);">
+            <div class="ntbl_list" style="margin-top: 10px;">开始时间：2018-02-18</div>
+            <div class="ntbl_list">结束时间：2018-02-18</div>
+            <div class="ntbl_list">计划时间：15minutes</div>
+            <div class="ntbl_list">实际用时：15minutes</div>
+
+
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px)">
+            <div class="ntbll_list" style="margin-top: 10px">最高分：<span style="color: red;"> 10</span></div>
+            <div class="ntbll_list">平均分：<span style="color: red;"> 7</span></div>
+            <div class="ntbll_list">最低分：<span style="color: red;"> 5</span></div>
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px);display: flex;align-items: center;justify-content: center;font-size: 12px;"><span style="color: red">4道题</span><span style="color: red">（出门）</span></div>
+         <div class="ntb_list" style="width: calc(20% - 2px)">
+                  <div class="ntbll_top">
+                    <input type="button" name="" value="开始" class="start">
+                    <div class="tt"><a href="#" >刷新</a></div>
+                    
+                  </div>
+                  <div class="ntbll_bottom">
+
+                        <div class="nbtlb_list" style="width: calc(40% - 2px)"><a href="#">edit</a></div>
+                         <div class="nbtlb_list" style="width: calc(60% - 2px)">我的排名：<span>2</span></div>
+                  </div>
+         </div>
+  
+
+    </div>
+    <!--练习-->
+
+    <!--练习-->
+      <div class="newtitle-bg" style="background-color: #ffffff;left: 20px;">
+         <div class="ntb_list" style="width: calc(8% - 2px);font-size: 20px;font-weight: bold;justify-content: center; align-items: center;display: flex;color: #cfe3fa">未开始</div>
+         <div class="ntb_list" style="width: calc(15% - 2px);color: blue;justify-content: center; align-items: center;display: flex;">五重循环(练习)</div>
+         <div class="ntb_list" style="width: calc(17% - 2px);font-size: 12px;justify-content: center;align-items: center;display: flex;">掌握三重循环的概念</div>
+         <div class="ntb_list" style="width: calc(20% - 2px);">
+            <div class="ntbl_list" style="margin-top: 10px;">开始时间：2018-02-18</div>
+            <div class="ntbl_list">结束时间：2018-02-18</div>
+            <div class="ntbl_list">计划时间：15minutes</div>
+            <div class="ntbl_list">实际用时：15minutes</div>
+
+
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px)">
+            <div class="ntbll_list" style="margin-top: 10px">最高分：<span style="color: red;"> 10</span></div>
+            <div class="ntbll_list">平均分：<span style="color: red;"> 7</span></div>
+            <div class="ntbll_list">最低分：<span style="color: red;"> 5</span></div>
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px);display: flex;align-items: center;justify-content: center;font-size: 12px;"><span style="color: red">4道题</span><span style="color: red">（课后）</span></div>
+         <div class="ntb_list" style="width: calc(20% - 2px)">
+                  <div class="ntbll_top">
+                    <input type="button" name="" value="开始" class="start">
+                    <div class="tt"><a href="#" >刷新</a></div>
+                    
+                  </div>
+                  <div class="ntbll_bottom">
+
+                        <div class="nbtlb_list" style="width: calc(40% - 2px)"><a href="#">edit</a></div>
+                         <div class="nbtlb_list" style="width: calc(60% - 2px)">我的排名：<span>2</span></div>
+                  </div>
+         </div>
+  
+
+    </div>
+    <!--练习-->
+
+    <!--练习-->
+      <div class="newtitle-bg" style="background-color: #ffffff;left: 20px;">
+         <div class="ntb_list" style="width: calc(8% - 2px);font-size: 20px;font-weight: bold;justify-content: center; align-items: center;display: flex;color: #cfe3fa">未开始</div>
+         <div class="ntb_list" style="width: calc(15% - 2px);color: blue;justify-content: center; align-items: center;display: flex;">六重循环(练习)</div>
+         <div class="ntb_list" style="width: calc(17% - 2px);font-size: 12px;justify-content: center;align-items: center;display: flex;">掌握三重循环的概念</div>
+         <div class="ntb_list" style="width: calc(20% - 2px);">
+            <div class="ntbl_list" style="margin-top: 10px;">开始时间：2018-02-18</div>
+            <div class="ntbl_list">结束时间：2018-02-18</div>
+            <div class="ntbl_list">计划时间：15minutes</div>
+            <div class="ntbl_list">实际用时：15minutes</div>
+
+
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px)">
+            <div class="ntbll_list" style="margin-top: 10px">最高分：<span style="color: red;"> 10</span></div>
+            <div class="ntbll_list">平均分：<span style="color: red;"> 7</span></div>
+            <div class="ntbll_list">最低分：<span style="color: red;"> 5</span></div>
+         </div>
+         <div class="ntb_list" style="width: calc(10% - 2px);display: flex;align-items: center;justify-content: center;font-size: 12px;"><span style="color: red">4道题</span><span style="color: red">（课后）</span></div>
+         <div class="ntb_list" style="width: calc(20% - 2px)">
+                  <div class="ntbll_top">
+                    <input type="button" name="" value="开始" class="start">
+                    <div class="tt"><a href="#" >刷新</a></div>
+                    
+                  </div>
+                  <div class="ntbll_bottom">
+
+                        <div class="nbtlb_list" style="width: calc(40% - 2px)"><a href="#">edit</a></div>
+                         <div class="nbtlb_list" style="width: calc(60% - 2px)">我的排名：<span>2</span></div>
+                  </div>
+         </div>
+  
+
+    </div>
+    <!--练习-->
+    <br>
+       <div class="arrive_at"><a href="#">签退表</a> </div>
+       <br>
+    <div class="out_class">
+      <div class="oc_list">
+        <input type="button" name="" class="o_button" value="能力表" style="background-color:#99ccff;">
+      </div>
+      <div class="oc_list">
+         <input type="button" name="" class="o_button" value="反馈表" style="background-color:#336699;">
+      </div>
+    </div>
+    </div>
+    
+
+
+    <div class="title-bg" style="top: 20px;right: 5px;width: 25%;height: 300px;">
+        <p class="title-info" style="top: 10px;left: 10px;">班级本堂课平均知识点掌握情况</p>
+        <div class="title-bg" style="top: 40px;right: 5px;width: 320px;height: 255px; background-color: #f9f9f9" id="person_abi"></div>
+    </div>
+    <div class="title-bg" style="top: 340px;right: 5px;width: 25%;height: 300px;">
+        <p class="title-info" style="top: 10px;left: 10px;">班级第一知识点掌握情况</p>
+        <div class="title-bg" style="top: 40px;right: 5px;width: 320px;height: 255px; background-color: #f9f9f9" id="first_abi"></div>
+    </div>
+
+    <div class="title-bg" style="top: 680px;right: 5px;width: 25%;height: 500px;">
+        <p class="title-info" style="top: 10px;left: 10px;">课堂提问</p>
+        <div class="toolsBar" style="position: absolute;top:5px;left: 235px;">
+            <input id="addBtn" class="btnClass" type="button" value="+&nbsp提问" />
+        </div>
+    </div>
+
+  </div>
+
+  <!--这是弹窗的部分-->
+  <div class="up" id="up">
+     <div class="head_up">
+         <div class="hu_list" style="width: calc(93% - 2px);justify-content: left;"><span>&nbsp;&nbsp;    三重循环</span></div>
+         <div class="hu_list" style="width: calc(7% - 2px);justify-content: center;color: #2beeff;"><span id="hu_close">关闭</span> </div>
+     </div>
+     <div class="u_content">
+       <div class="uc_time">
+         <div class="uct_list">
+         &nbsp;
+             <span>开始日期：</span>
+             <input type="text" name="" class="uct_text" id="datepicker1" style="color: #607ae3;  size="8" onclick="this.value=getdateTime();" class="time"  >
+         </div>
+         <div class="uct_list">
+           <span>具体时间：</span>
+             <input type="text" name="" class="uct_text" style="color: #607ae3;  size="8" onclick="this.value=getTime();" class="time" >
+         </div>
+       </div>
+       <div class="uc_time">
+         <div class="uct_list">
+         &nbsp;
+             <span>结束日期：</span>
+             <input type="text" name="" class="uct_text" id="datepicker1" style=" color: #607ae3; size="8" onclick="this.value=getdateTime();"  >
+         </div>
+         <div class="uct_list">
+           <span>具体时间：</span>
+             <input type="text" name="" class="uct_text" style=" color: #607ae3; size="8" onclick="this.value=getTime();" >
+         </div>
+       </div>
+       <div class="uc_time">
+           <div class="uct_list"> &nbsp;
+           <span>计划时长：</span>
+             <span>15minutes</span>
+         </div>
+       </div>
+       <div class="uc_time">
+         <div class="uct_list" style="width: calc(98% - 2px)"> &nbsp;
+           <span>题目列表：</span>
+             <input type="text" name="" class="uct_text" style="width: 420px;" >
+         </div>
+       </div>
+        <div class="uc_time">
+              <div class="uct_list">
+         &nbsp;
+             <span>Public：</span>&nbsp;&nbsp;&nbsp;&nbsp; 
+              <select name="" id="" style="width: 120px;height: 30px;border: 1px solid #d1e8ff;border-radius: 3px;">
+                <option value="Public" >Public</option>
+                <option value="Private">Private</option>
+              </select>
+         </div>
+         <div class="uct_list">
+           <span>Password：</span>
+             <input type="text" name="" class="uct_text" placeholder="请输入密码" style="font-size: 14px;">
+         </div>
+        </div>
+        <div class="uc_time">
+           <div class="uct_list" style="width: calc(98% - 2px)"> &nbsp;
+           <span>试卷种类：</span>
+           <select name="" id="" style="width: 120px;height: 30px;border: 1px solid #d1e8ff;border-radius: 3px;">
+             <option value="">入门测</option>
+             <option value="">出门测</option>
+             <option value="">课堂练习</option>
+             <option value="">课堂测试</option>
+             <option value="">课后练习</option>
+             <option value="">课后测试</option>
+             <option value="">课前预习</option>
+             <option value="">月测</option>
+           </select>
+         </div>
+        </div>
+
+
+     </div>
+     <div class="u_bottom">
+       <div class="ub_list" style="width: calc(75% - 2px)"></div>
+       <div class="ub_list" style="width: calc(25% - 2px)">
+            <input type="button" name="" value="确定" class="ub_button" id="queding">
+            &nbsp;&nbsp;&nbsp;
+            <input type="button" name="" value="取消" class="ub_button">
+       </div>
+     </div>
+
+  </div>
+<!--这是试卷的弹窗部分-->
+
+<!--这是知识点的弹窗部分-->
+  <div class="kn_up" id="knu">
+     <div class="head_up">
+       <div class="knu_list" style="justify-content:left;font-weight: bold;"><span>&nbsp;&nbsp;    三重循环</span></div>
+       <div class="knu_list" style="color: #607ae3;">★★★★★</div>
+
+       <div  class="knu_list" style="width: calc(6% - 2px);color: #2beeff;font-size: 14px; "><span id="kn_close">关闭</span></div>
+     </div>
+     <div class="u_content">
+        <div class="knuc_top">
+          
+             <div class="knucb_top">知识点目标</div>
+          <div class="knucb_bottom">
+            我们一定要成为让自己满意的人儿！
+           
+         
+          </div>
+        </div>
+        <div class="knuc_bottom">
+          <div class="knucb_top">知识点描述</div>
+          <div class="knucb_bottom">
+            我们一定要成为让自己满意的人儿！
+            我们一定要成为让自己满意的人儿！
+            我们一定要成为让自己满意的人儿！
+            我们一定要成为让自己满意的人儿！
+            我们一定要成为让自己满意的人儿！
+             我们一定要成为让自己满意的人儿！
+            我们一定要成为让自己满意的人儿！
+            我们一定要成为让自己满意的人儿！
+            我们一定要成为让自己满意的人儿！
+            我们一定要成为让自己满意的人儿！
+             我们一定要成为让自己满意的人儿！
+            我们一定要成为让自己满意的人儿！
+            我们一定要成为让自己满意的人儿！
+            我们一定要成为让自己满意的人儿！
+            我们一定要成为让自己满意的人儿！
+          </div>
+        </div>
+     </div>
+     <div class="u_bottom">
+         <div class="ub_list" style="width: calc(75% - 2px)"></div>
+       <div class="ub_list" style="width: calc(25% - 2px)">
+            <input type="button" name="" value="确定" class="ub_button" id="queding" style="display: none;">
+            &nbsp;&nbsp;&nbsp;
+            <span style="font-weight: bold;">计时：06：58</span>
+       </div>
+     </div>
+
+  </div>
+
+<!--这是知识点的弹窗部分-->
+
+<!--这是试卷的弹窗部分-->
+  <div class="tp_up" id="tpup">
+     <div class="head_up">
+       <div class="knu_list" style="justify-content:left;font-weight: bold;width: calc(25% - 2px)"><span>&nbsp;&nbsp;    三重循环测试（3分）</span></div>
+       <div class="knu_list" style="width: calc(44% - 2px)">
+         <input type="button" name="" class="tpup_button firstdemo" value="试卷">
+         &nbsp;  &nbsp;
+         <input type="button" name="" class="tpup_button" value="排名">
+           &nbsp;  &nbsp;
+         <input type="button" name="" class="tpup_button" value="状态">
+
+       </div>
+       <div class="knu_list" style="color: #607ae3;width: calc(25% - 2px)">★★★★★</div>
+       
+       <div  class="knu_list" style="width: calc(6% - 2px);color: #2beeff;font-size: 14px; "><span id="tpup_close" onclick="tpupclose()";>关闭</span></div>
+     </div>
+       <div class="u_content1"  >
+          <table id="customers" align="center">
+           <tr align="center" height="40px" bgcolor="#fff" style="font-size: 20px;">
+             <td style="font-size: 15px;">题目编号</td>
+             <td style="font-size: 15px;">标题</td>
+             <td style="font-size: 15px;">来源/分类</td>
+             <td style="font-size: 15px;">正确/提交</td>
+             <td style="font-size: 15px;">分值</td>
+           </tr>
+           <tr class="r_d_list" height="35px" align="center">
+             <td>2993</td>
+             <td><a href="#" onclick=testup();>找零</a></td>
+             <td><a href="#">贪心</a></td>
+             <td><a href="#">3</a>/<a href="#">5</a></td>
+             <td>3</td>
+           </tr>
+           <tr class="r_d_list" height="35px" align="center" bgcolor="#f6f6f6">
+             <td>2994</td>
+             <td><a href="#">均分纸牌</a></td>
+             <td><a href="#">贪心</a></td>
+             <td><a href="#">3</a>/<a href="#">5</a></td>
+             <td>3</td>
+           </tr>
+           <tr class="r_d_list" height="35px" align="center">
+             <td>2995</td>
+             <td><a href="#">数组排序</a></td>
+             <td><a href="#">贪心</a></td>
+             <td><a href="#">3</a>/<a href="#">5</a></td>
+             <td>3</td>
+           </tr>
+           <tr class="r_d_list" height="35px" align="center" bgcolor="#f6f6f6">
+             <td>2996</td>
+             <td><a href="#">排序</a></td>
+             <td><a href="#">贪心</a></td>
+             <td><a href="#">3</a>/<a href="#">5</a></td>
+             <td>3</td>
+           </tr>
+
+
+
+
+
+
+          </table>
+
+       </div>
+     <div class="u_content1" style="display: none;">
+        <table id="customers" align="center">
+             <tr align="center" height="40px" bgcolor="#fff" style="font-size: 20px;">
+               <th colspan="6"  style="border: 1px solid #eee;" width="50%">学生信息</th>
+               <th style="border: 1px solid #eee;" colspan="3">题目</th>
+             </tr>
+             <tr class="r_d_list" height="35px" align="center">
+               <td >排名</td>
+               <td>帐号</td>
+               <td>用户名</td>
+               <td>已解决</td>
+               <td>总时长</td>
+               <td>得分</td>
+               <td align="center">A</td>
+               <td align="center">B</td>
+               <td align="center">C</td>
+             </tr>
+             <tr class="r_d_list" height="35px" align="center">
+               <td >1</td>
+               <td><a>16401010213</a> </td>
+               <td><a href="#">诸葛亮</a> </td>
+               <td><a href="#">2</a> </td>
+               <td>19:00</td>
+               <td>5</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+               <td style="background-color: #aaaaff">00:06:05</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+             </tr>
+               <tr class="r_d_list" height="35px" align="center" bgcolor="#f6f6f6">
+               <td >2</td>
+               <td><a>16401010213</a> </td>
+               <td><a href="#">诸葛亮</a> </td>
+               <td><a href="#">2</a> </td>
+               <td>19:00</td>
+               <td>5</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+               <td style="background-color: #aaaaff">00:06:05</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+             </tr>
+              <tr class="r_d_list" height="35px" align="center">
+               <td >3</td>
+               <td><a>16401010213</a> </td>
+               <td><a href="#">诸葛亮</a> </td>
+               <td><a href="#">2</a> </td>
+               <td>19:00</td>
+               <td>5</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+               <td style="background-color: #aaaaff">00:06:05</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+             </tr>
+              <tr class="r_d_list" height="35px" align="center" bgcolor="#f6f6f6">
+               <td >4</td>
+               <td><a>16401010213</a> </td>
+               <td><a href="#">诸葛亮</a> </td>
+               <td><a href="#">2</a> </td>
+               <td>19:00</td>
+               <td>5</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+               <td style="background-color: #aaaaff">00:06:05</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+             </tr>
+             <tr class="r_d_list" height="35px" align="center">
+               <td >5</td>
+               <td><a>16401010213</a> </td>
+               <td><a href="#">诸葛亮</a> </td>
+               <td><a href="#">2</a> </td>
+               <td>19:00</td>
+               <td>5</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+               <td style="background-color: #aaaaff">00:06:05</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+             </tr>
+              <tr class="r_d_list" height="35px" align="center" bgcolor="#f6f6f6">
+               <td >6</td>
+               <td><a>16401010213</a> </td>
+               <td><a href="#">诸葛亮</a> </td>
+               <td><a href="#">2</a> </td>
+               <td>19:00</td>
+               <td>5</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+               <td style="background-color: #aaaaff">00:06:05</td>
+               <td style="background-color: #33ff33">00:10:24</td>
+             </tr>
+          </table>
+     </div>
+      
+    
+      <div class="u_content1" style="display: none;">
+         <table id="customers" align="center"> 
+          <tr class="r_d_list" height="35px" align="center">
+            <td>运行编号</td>
+            <td>用户帐号</td>
+            <td>问题序号</td>
+            <td>结果</td>
+            <td>语言</td>
+            <td>提交时间</td>
+            <td>得分</td>
+            <td>判题机</td>
+          </tr>
+          <tr class="r_d_list" height="35px" align="center">
+            <td style="font-weight: normal;">54261</td>
+            <td>16401010213</td>
+            <td>B</td>
+            <td class="ac">AC</td>
+            <td><a href="#">c++</a>/<a href="#">Edit</a></td>
+            <td>2018-08-20</td>
+            <td>3</td>
+            <td>1001</td>
+          </tr>
+          <tr class="r_d_list" height="35px" align="center" bgcolor="#f6f6f6">
+            <td>54261</td>
+            <td>16401010213</td>
+            <td>B</td>
+            <td class="no">NO</td>
+            <td><a href="#">c++</a>/<a href="#">Edit</a></td>
+            <td>2018-08-20</td>
+            <td>3</td>
+            <td>1001</td>
+          </tr>
+          <tr class="r_d_list" height="35px" align="center">
+            <td>54261</td>
+            <td>16401010214</td>
+            <td>B</td>
+            <td class="ac">AC</td>
+            <td><a href="#">c++</a>/<a href="#">Edit</a></td>
+            <td>2018-08-20</td>
+            <td>3</td>
+            <td>1001</td>
+          </tr>
+          <tr class="r_d_list" height="35px" align="center" bgcolor="#f6f6f6">
+            <td>54261</td>
+            <td>16401010213</td>
+            <td>B</td>
+            <td class="ac">AC</td>
+            <td><a href="#">c++</a>/<a href="#">Edit</a></td>
+            <td>2018-08-20</td>
+            <td>3</td>
+            <td>1001</td>
+          </tr>
+          <tr class="r_d_list" height="35px" align="center">
+            <td>54261</td>
+            <td>16401010213</td>
+            <td>B</td>
+            <td class="ac">AC</td>
+            <td><a href="#">c++</a>/<a href="#">Edit</a></td>
+            <td>2018-08-20</td>
+            <td>3</td>
+            <td>1001</td>
+          </tr>
+          <tr class="r_d_list" height="35px" align="center" bgcolor="#f6f6f6">
+            <td>54261</td>
+            <td>16401010213</td>
+            <td>B</td>
+            <td class="ac">AC</td>
+            <td><a href="#">c++</a>/<a href="#">Edit</a></td>
+            <td>2018-08-20</td>
+            <td>3</td>
+            <td>1001</td>
+          </tr>
+         </table>
+      </div>
+       <div class="u_content1" style="display: none;">
+         <div class="uc_title">数组排序</div>
+         <div class="uc_data">
+           <span>提交：6</span>
+           &nbsp;&nbsp;&nbsp;
+           <span>解决：4</span>
+         </div>
+         <div class="uc_operation">
+          <a href="#">[状态]</a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="#">[Edit]</a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="#">[Testdata]</a>
+         </div>
+         <div class="uc_description">
+           <span style="color:#712015;font-weight: bold;font-size: 18px; ">描述</span>
+           <br><br>
+           <span>&nbsp;&nbsp;&nbsp;某校大门外长度为L的马路上有一排树，每两棵相邻的树之间的间隔都是1米。我们可以把马路看成一个数轴，马路的一端在数轴0的位置，另一端在L的位置；数轴上的每个整数点，即0，1，2，……，L，都种有一棵树。
+　　由于马路上有一些区域要用来建地铁。这些区域用它们在数轴上的起始点和终止点表示。　　已知任一区域的起始点和终止点的坐标都是整数，区域之间可能有重合的部分。现在要把这些区域中的树（包括区域端点处的两棵树）移走。聪明的小明干了一件又一件事，他觉得这个很有意思，就想用计算机来帮助建筑工人统计这些树，现在任务来了，计算将这些树都移走后，马路上还有多少棵树。</span>
+
+         </div>
+         <div class="uc_input">
+         <br>
+             <span style="color:#712015;font-weight: bold;font-size: 18px; ">输入</span>
+           <br><br>
+           <span>&nbsp;&nbsp;&nbsp;
+              第一行是一个整数N表示有N组测试数据（1<=N<=100)
+每组测试数据的第一行有两个整数：L（1 <= L <= 10000）和 M（1 <= M <= 100），L代表马路的长度，M代表区域的数目，L和M之间用一个空格隔开。接下来的M行每行包含两个不同的整数，用一个空格隔开，表示一个区域的起始点和终止点的坐标。 
+           </span>
+         </div>
+         <div class="uc_output">
+              <br>
+             <span style="color:#712015;font-weight: bold;font-size: 18px; ">输出</span>
+           <br><br>
+           <span>&nbsp;&nbsp;&nbsp;
+             输出包括一行，这一行只包含一个整数，表示马路上剩余的树的数目。
+
+           </span>
+         </div>
+         <div class="sample_input">
+           <br>
+             <span style="color:#712015;font-weight: bold;font-size: 18px; ">样例输入</span>
+           <br><br>
+
+           <textarea style="width: calc(90% - 4px);height: 100px;">
+1
+500 3
+150 300
+100 200
+470 471
+           </textarea>
+         </div>
+         <div class="sample_out">
+            <span style="color:#712015;font-weight: bold;font-size: 18px; ">样例输出</span>
+           <br><br>
+
+           <textarea style="width: calc(90% - 4px);height: 50px;" >
+298
+           </textarea>
+
+         </div>
+         <div class="uc_item">
+            <br>
+             <span style="color:#712015;font-weight: bold;font-size: 18px; ">思路提示</span>
+           <br><br>
+           <span style="color:#712015; ">&nbsp;&nbsp;&nbsp;
+             你应该咋地咋地！！！！ 
+           </span>
+         </div>
+         <div class="uc_bu_operation">
+         <br>
+          <input type="submit" name="" value="提交" class="uc_button">
+         </div>
+         <div class="uc_submit">
+           
+            <textarea style="width: calc(90% - 4px);height: 200px;" >
+
+           </textarea>
+         </div>
+       </div>
+
+     <div class="u_bottom">
+
+       <div class="ubin">
+           <input type="button" class="knmark" name="" value="循环">
+           &nbsp;&nbsp;&nbsp;
+         <input type="button" class="knmark" name="" value="数组">
+       </div>
+        
+     </div>
+
+  </div>
+
+<!--这是试卷的弹窗部分-->
+</body>
+</html>
+<script>
+    $(".endup").click(function(){
+        alert("此知识点讲解已结束");
+    });
+
+    $(".nostart").click(function(){
+        alert("此知识点讲解未开始");
+    });
+</script>
+<script>
+    var myChart = echarts.init(document.getElementById('person_abi'));
+
+    option = {backgroundColor:"#FFF",
+        radar: {
+            name: {
+                textStyle: {
+                    color: '#999999',
+                }
+            },
+            splitArea: {
+                areaStyle: {
+                    color: ['#fff', '#fff', '#fff', '#fff'],
+                    shadowColor: 'rgba(0, 100, 0, 0.3)'
+                }
+            },
+            indicator: [
+                {name: '顺序结构', max: 10},
+                {name: '分支结构', max: 10},
+                {name: '循环结构', max: 10},
+                {name: '数组', max: 10},
+                {name: '字符', max: 10},
+                {name: '算法1', max: 10},
+                {name: '算法2', max: 10}
+            ]
+        },
+        series: [{
+            type: 'radar',
+            data: [
+                {
+                    value: [10, 9, 8, 7, 6, 5, 4],
+                    name: 'DATA',
+                    itemStyle: {
+                        normal: {
+                            color: 'rgba(5, 128, 242, 0.5)'
+                        }
+                    },
+                    areaStyle: {
+                        normal: {
+                            color: '#37A2DA'
+                        }
+                    }
+                }
+            ]
+        }]
+    }
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option,true);
+</script>
+<script>
+    var myChart1 = echarts.init(document.getElementById('first_abi'));
+
+    option = {backgroundColor:"#FFF",
+        radar: {
+            name: {
+                textStyle: {
+                    color: '#999999',
+                }
+            },
+            splitArea: {
+                areaStyle: {
+                    color: ['#fff', '#fff', '#fff', '#fff'],
+                    shadowColor: 'rgba(0, 100, 0, 0.3)'
+                }
+            },
+            indicator: [
+                {name: '顺序结构', max: 10},
+                {name: '分支结构', max: 10},
+                {name: '循环结构', max: 10},
+                {name: '数组', max: 10},
+                {name: '字符', max: 10},
+                {name: '算法1', max: 10},
+                {name: '算法2', max: 10}
+            ]
+        },
+        series: [{
+            type: 'radar',
+            data: [
+                {
+                    value: [10, 9, 8, 7, 6, 5, 4],
+                    name: 'DATA',
+                    itemStyle: {
+                        normal: {
+                            color: 'rgba(5, 128, 242, 0.5)'
+                        }
+                    },
+                    areaStyle: {
+                        normal: {
+                            color: '#37A2DA'
+                        }
+                    }
+                }
+            ]
+        }]
+    }
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart1.setOption(option,true);
+</script>
+<script type="text/javascript">
+   var a=document.getElementById('close');
+   var b=document.getElementById('open');
+   a.onclick=function()
+   {
+    document.getElementById('exam').style.display="none";
+   }
+  b.onclick=function()
+  {
+    document.getElementById('exam').style.display="block";
+  }
+  function cl()
+  {
+    document.getElementById('rank').style.display="none";
+  }
+  function op()
+  {
+    document.getElementById('rank').style.display="block";
+  }
+    function getTime(){
+    var d=new Date();
+    return /*d.getFullYear() + "-" + d.getMonth() + "-" + d.getDate() + " " + */d.getHours() + ":" + d.getMinutes();
+}
+function getdateTime(){
+    var d=new Date();
+    return d.getMonth()+1 + "/" + d.getDate() + "/" + d.getFullYear();
+}
+function openup()
+{
+  document.getElementById('knu').style.display="block";
+}
+function openuptp()
+{
+  document.getElementById('tpup').style.display="block";
+}
+function tpupclose()
+{
+  document.getElementById('tpup').style.display="none";
+}
+function testup()
+{
+  var bbb = document.getElementsByClassName("u_content1");
+
+  bbb[3].style.display="block";
+   bbb[1].style.display="none";
+   bbb[2].style.display="none";
+   bbb[0].style.display="none";
+}
+</script>
+<script type="text/javascript" src="../../../../js/jquery-1.10.1.min.js"></script>
+<script language="javascript" type="text/javascript">
+    $(document).ready(function (){
+       $("input.tpup_button").each(function(index){
+       $(this).click(function(){ 
+       $("input.tpup_button").removeClass("firstdemo");
+       $("input.tpup_button").eq(index).addClass("firstdemo");
+       });
+     });
+     });
+</script>
+<script type="text/javascript">
+
+ var aaa = document.getElementsByClassName("tpup_button");
+var bbb = document.getElementsByClassName("u_content1");
+aaa[0].onclick=function()
+{
+   bbb[0].style.display="block";
+   bbb[1].style.display="none";
+   bbb[2].style.display="none";
+   bbb[3].style.display="none";
+}
+aaa[1].onclick=function()
+{
+   bbb[1].style.display="block";
+   bbb[0].style.display="none";
+   bbb[2].style.display="none";
+      bbb[3].style.display="none";
+}
+aaa[2].onclick=function()
+{
+   bbb[2].style.display="block";
+   bbb[1].style.display="none";
+   bbb[0].style.display="none";
+      bbb[3].style.display="none";
+}
+</script>
